@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			body{
+				background-color: #f4f4f4;
+			}
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			/* 主体部分 */
+			.a{
+				width: 1020px;
+				height: 300px;
+				background-color:white;
+				margin-top:130px;
+				margin-left:-12px;
+			}
+			.b{
+				position: absolute;
+				margin-left:450px;
+				margin-top: 50px;
+			}
+			@font-face{
+				font-family: titleFont;
+				src: url('fonts/方正流行体简体.ttf');
+			}
+			.b p{
+				font-family: titleFont;
+			}
+			.b img{
+				width: 150px;
+				height: 150px;
+			}
+			.c{
+				width: 1000px;
+				height:400px;
+				background-color:white;
+				margin-top: 20px;
+				margin-left:270px;
+			}
+			body {
+			    font-family: Arial, sans-serif;
+			  }
+			.c {
+			    width:1000px;
+			    margin: 0 auto;
+			    border: 1px solid #ccc;
+			    padding: 10px;
+				margin-top:30px;
+			  }
+			.message {
+			    padding: 5px;
+			    margin-bottom: 5px;
+			    border-radius: 5px;
+			  }
+			.user-message {
+			    background-color: #d9f0fc;
+			  }
+			.customer-service-message {
+			    background-color: #f0f0f0;
+			  }
+			body{
+				font-family: Arial, sans-serif;
+			}
+			#chatContainer {
+			  width:800px;
+			  height:200px;
+			  border: 1px solid #ccc;
+			  padding: 10px;
+			  overflow-y: scroll;
+			}
+			
+			#userInput {
+			  width:700px;
+			  margin-left:0px;
+			  margin-top: 10px;
+			  height:50px;
+			}
+			#sendButton {
+				position: absolute;
+				margin-left:10px;
+				margin-top:12px;
+				width: 80px;
+				height:55px;
+				border: 0px;
+				background-color: red;
+				color: white;
+			}
+			.tupian img{
+				width:20px;
+				height:15px;
+				position: absolute;
+				margin-top: 15px;
+				margin-left:5px;
+			}
+			.lianjie img{
+				width:20px;
+				height:15px;
+				margin-left: 35px;
+				margin-top:15px;
+				position: absolute;
+			}
+			.d{
+				position: absolute;
+				width: 1020px;
+				height: 300px;
+				background-color:white;
+				margin-top:50px;
+				margin-left:-12px;
+			}
+			.dd{
+				width: 1000px;
+				height:400px;
+				background-color:white;
+				margin-top: 20px;
+				margin-left:270px;
+			}
+			.dd{
+			    width:1000px;
+				height:1100px;
+			    margin: 0 auto;
+			    border: 1px solid #ccc;
+			    padding: 10px;
+				margin-top:30px;
+			  }
+			  @font-face {
+			  	font-family: titleFont1;
+			  	src: url('方正剪纸简体.ttf');
+			  }
+			  .dd p{
+				  font-family: titleFont;
+			  }
+			  .q p{
+				  margin-top: 100px;
+				  margin-left:30px;
+				  font-size: 24px;
+			  }
+			  .n{
+				  margin-top:650px;
+				  margin-left:900px;
+			  }
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="header">
+				<div class="container">
+					<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+					<ul class="titlelist">
+						<li><a href="首页.html">主页</a></li>
+						<li><a href="./社区.html">社区</a></li>
+						<li><a href="咨询.html">咨询</a></li>
+						<li><a href="./任务大厅.html">任务大厅</a></li>
+					</ul>
+					<div class="dengru">
+						<div><a href="./登入.html"><b>登入</b></a></div>
+						<div><a href="./注册.html"><b>注册</b></a></div>
+					</div>
+				</div>
+			</div>
+				<div class="banner">
+					<div><img src="./img/图片1.jpg"></div>
+					<div><img src="./img/图片2.jpg"></div>
+					<div><img src="./img/图片3.jpg"></div>
+					<div><img src="./img/图片4.jpg"></div>
+				</div>
+				<ul class="lrbutton">
+					<li>&lt;</li>
+					<li>&gt;</li>
+				</ul>
+				<ul class="smallbutton">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</div>
+		<!-- 主体部分 -->
+		<div class="c">
+			<div class="message user-message">客服：您好!</div>
+			<div class="input-area">
+			 <div id="chatContainer">
+			 </div>
+			 <input type="text"id="userInput">
+			 <button id="sendButton">发送</button>
+			 <div class="tupian">
+				 <img src="./img/屏幕截图 2024-05-27 110224.png">
+			 </div>
+			 <div class="lianjie">
+				 <img src="./img/屏幕截图 2024-05-27 110232.png">
+			 </div>
+		</div>
+		<div class="a">
+			<div class="b">
+				<p>微信联系我们</p><img src="./img/二维码.jpg">
+			</div>
+		</div>
+		<div class="dd">
+			<p>
+				您有什么技术问题可以发给我们的工作人员！！！
+			</p>
+			<div class="input-area">
+			 <div id="chatContainer">
+				 
+			 </div>
+			 <input type="text"id="userInput">
+			 <button id="sendButton">发送</button>
+			 <div class="tupian">
+				 <img src="./img/屏幕截图 2024-05-27 110224.png">
+			 </div>
+			 <div class="lianjie">
+				 <img src="./img/屏幕截图 2024-05-27 110232.png">
+			 </div>
+			 <div class="q">
+				 <p>全网最大的免费IT学习资源社区</p>
+				 <iframe src="https://www.dmzshequ.com/" width="1000" height="600" style="border: none; position: absolute; top: 1750px; left:270px;"></iframe>
+			 </div>
+			 <div class="n">
+				 <a href="./咨询.html">返回</a>
+			 </div>
+		</div>
+		<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./js.js"></script>
+		<script>
+		  const chatContainer = document.getElementById('chatContainer');
+		  const userInput = document.getElementById('userInput');
+		  const sendButton = document.getElementById('sendButton');
+		  sendButton.addEventListener('click', () => {
+		    const message = userInput.value;
+		    if (message) {
+		      const userMessageDiv = document.createElement('div');
+		      userMessageDiv.textContent = '你：' + message;
+		      chatContainer.appendChild(userMessageDiv);
+		      const responseMessageDiv = document.createElement('div');
+		      responseMessageDiv.textContent ='用户：这是用户的回复';
+		      chatContainer.appendChild(responseMessageDiv);
+		      userInput.value = '';
+		    }
+		  });
+		</script>
+	</body>
+</html>

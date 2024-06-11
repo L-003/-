@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			body{
+				background-color:#f0f3ef;
+			}
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.yonghu1{
+				float: right;
+				margin-top: 20px;
+			}
+			.yonghu1 a{
+				margin-left:10px;
+				margin-top: -20px;
+				color: white;
+			}
+			.tuichu a{
+				float: right;
+				margin-right:-200px;
+				margin-top:25px;
+				font-size: 12px;
+			}
+			/* 侧导航栏头 */
+			.ce{
+				width: 160px;
+				height:800px;
+				background-color:black;
+				opacity:0.3;
+				margin-left:200px;
+				margin-top:70px;
+				position: relative;
+				position:fixed;
+				display: flex;
+			}
+			.ding h4{
+				position: absolute;
+				color:white;
+				margin-top: 80px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.wo{
+				position:absolute;
+				margin-top:120px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ping{
+				position: absolute;
+				margin-top:145px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.qian h4{
+				position: absolute;
+				color:white;
+				margin-top:200px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.yu{
+				position: absolute;
+				margin-top:240px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.hong{
+				position: absolute;
+				margin-top:265px;
+				margin-left:260px;
+				font-size:14px;
+				color:white;
+			}
+			.yue{
+				position: absolute;
+				margin-top:287px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ke h4{
+				position: absolute;
+				color:white;
+				margin-top:340px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.jia{
+				position: absolute;
+				margin-top:375px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.yi{
+				position: absolute;
+				margin-top:400px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jiao{
+				position: absolute;
+				margin-top:425px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.wen{
+				position: absolute;
+				margin-top:450px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.fa{
+				position: absolute;
+				margin-top:475px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jubao{
+				position: absolute;
+				margin-top:500px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.she h4{
+				position: absolute;
+				color:white;
+				margin-top:545px;
+				margin-left:255px;
+				font-size: 18px;
+			}
+			.ge{
+				position: absolute;
+				margin-top:585px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.lian{
+				position: absolute;
+				margin-top:610px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			a:hover{
+				color: mediumblue;
+			}
+			/* 侧导航栏尾 */
+			/* 主体部分头 */
+			.zhuti{
+				position: absolute;
+				width:1000px;
+				height:60px;
+				margin-top:80px;
+				margin-left:400px;
+				background-color: white;
+			}
+			.zhuti p{
+				color:black;
+				opacity: 0.8;
+				margin-top:18px;
+				margin-left:35px;
+			}
+			.a{
+				width: 1000px;
+				height: 500px;
+				background-color: white;
+				position: absolute;
+				margin-left: 400px;
+				margin-top: 170px;
+			}
+			.footer-er{
+				width: 460px;
+				height: 220px;
+				background-color: white;
+				float: right;
+				margin-top:100px;
+				margin-right:300px;
+			}
+			.footer-er{
+				width: 390px;
+				height: 190px;
+				background: #fff;
+				margin-top:100px;
+				padding: 20px 30px;
+			}
+			
+			.footer-er>div {
+				float: left;
+			}
+			
+			.footer-er h3 {
+				color: #404040;
+			}
+			
+			.footer-er>div:first-child>ul>li {
+				margin-top: 15px;
+				margin-left: 25px;
+			}
+			
+			.footer-er>div:first-child>ul>li>a>i {
+				font-size: 25px;
+				color: #CBCBCB;
+			}
+			.footer-er>div:first-child>ul>li>a>i:hover{
+				color: #42D333;
+			}
+			.footer-er>div:nth-child(2) {
+				margin-left: 70px;
+			}
+			
+			.footer-er>div:nth-child(2)>img {
+				width: 120px;
+			}
+			
+			.footer-er>div:last-child {
+				margin-top: 65px;
+				margin-left: 20px;
+			}
+			
+			.footer-er>div:last-child>div {
+				width: 100px;
+				height: 30px;
+				border: 2px solid #42D333;
+				margin-bottom: 10px;
+			}
+			
+			.footer-er>div:last-child>div>a {
+				display: block;
+				height: 100%;
+				font-size: 12px;
+				color: #42D333;
+				line-height: 30px;
+				text-align: center;
+			}
+			
+			.footer-er>div:last-child i {
+				font-size: 16px;
+				margin-right: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="yonghu">
+					<div class="yonghu1">🤑<a href="./用户中心.html"><b>用户中心</b></a></div>
+					<div class="tuichu">
+						<a href="./首页.html"><u>退出登录</u></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 侧导航栏 -->
+		<div class="ce"></div>
+		<div class="ding">
+			<h4>订单中心</h4>
+			<div><a href="我的订单.html" class="wo">我的订单</a></div>
+			<div><a href="./评价晒单.html" class="ping">评价晒单</a></div>
+		</div>
+		<div class="qian">
+			<h4>我的钱包</h4>
+			<div><a href="./我的余额.html" class="yu">我的余额</a></div>
+			<div><a href="./红包.html" class="hong">红包</a></div>
+			<div><a href="./当月排行.html" class="yue">当月排行</a></div>
+		</div>
+		<div class="ke">
+			<h4>客户服务</h4>
+			<div><a href="./价格保护.html" class="jia">价格保护</a></div>
+			<div><a href="./意见建议.html" class="yi">意见建议</a></div>
+			<div><a href="./交易纠纷.html" class="jiao">交易纠纷</a></div>
+			<div><a href="./我的问答.html" class="wen">我的问答</a></div>
+			<div><a href="./我的发票.html" class="fa">我的发票</a></div>
+			<div><a href="./举报中心.html" class="jubao">举报中心</a></div>
+		</div>
+		<div class="she">
+			<h4>设置</h4>
+			<div><a href="./个人信息.html" class="ge">个人信息</a></div>
+			<div><a href="./联系我们.html" class="lian">联系我们</a></div>
+		</div>
+		<!-- 侧导航栏尾 -->
+		<!-- 主体部分 -->
+		<div class="zhuti"><p>联系我们</p></div>
+		<div class="a">
+			<div class="footer-er">
+				<div>
+					<h3>关注我们</h3>
+						<ul>
+							<li><a href="./联系我们二维码.html"><img src="./img/微信图标.png"></a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>微加我聊</h3>
+						<img src="./img/二维码.jpg">
+					</div>
+					<div>
+						<div><a href="#"><i class="iconfont icon-pingguo"></i><span>iPhoen下载</span></a></div>
+						<div><a href="#"><i class="iconfont icon-android-fill"></i><span>Android下载</span></a></div>
+						<div><a href="./咨询.html"><span>在线咨询</span></a></div>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

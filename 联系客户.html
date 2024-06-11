@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			/* 主体部分 */
+			body {
+			    font-family: Arial, sans-serif;
+			  }
+			.chat-container {
+			    width: 400px;
+			    margin: 0 auto;
+			    border: 1px solid #ccc;
+			    padding: 10px;
+				margin-top:30px;
+			  }
+			
+			.message {
+			    padding: 5px;
+			    margin-bottom: 5px;
+			    border-radius: 5px;
+			  }
+			
+			.user-message {
+			    background-color: #d9f0fc;
+			  }
+			
+			.customer-service-message {
+			    background-color: #f0f0f0;
+			  }
+				body {
+				  font-family: Arial, sans-serif;
+				}
+				
+				#chatContainer {
+				  width:380px;
+				  height: 400px;
+				  border: 1px solid #ccc;
+				  padding: 10px;
+				  overflow-y: scroll;
+				}
+				
+				#userInput {
+				  width:395px;
+				  margin-left:0px;
+				  margin-top: 10px;
+				  height:50px;
+				}
+				#userInput button{
+					margin-top: 5px;
+				}
+				#sendButton {
+				  padding: 5px 10px;
+				  margin-left:350px;
+				  margin-top: 10px;
+				}
+				.a img{
+					position: absolute;
+					width:18px;
+					height:15px;
+					margin-top: -30px;
+					margin-left:2px;
+				}
+				.b img{
+					position: absolute;
+					width:18px;
+					height:15px;
+					margin-top: -30px;
+					margin-left:30px;
+				}
+				.c{
+					width: 80px;
+					height: 50px;
+					position: absolute;
+					margin-left:750px;
+					margin-top: 10px;
+				}
+		</style>
+	</head>
+	<body>
+		<!-- 主体部分 -->
+		<div class="chat-container">
+		  <div class="message user-message">你：你好</div>
+		  <div class="message customer-service-message">用户：您好！您对我的订单要求有什么问题吗？</div>
+		  <div class="input-area">
+		   <div id="chatContainer">
+		   </div>
+		   <input type="text"id="userInput">
+		   <button id="sendButton">发送</button>
+		  </div>
+		  <div class="a">
+			  <img src="./img/屏幕截图 2024-05-27 110224.png">
+		  </div>
+		  <div class="b">
+			  <img src="./img/屏幕截图 2024-05-27 110232.png">
+		  </div>
+		</div>
+		<div class="c">
+			<button><a href="./咨询.html">返回</a></button>
+		</div>
+		<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./js.js"></script>
+		<script>
+		  const chatContainer = document.getElementById('chatContainer');
+		  const userInput = document.getElementById('userInput');
+		  const sendButton = document.getElementById('sendButton');
+		  sendButton.addEventListener('click', () => {
+		    const message = userInput.value;
+		    if (message) {
+		      const userMessageDiv = document.createElement('div');
+		      userMessageDiv.textContent = '你：' + message;
+		      chatContainer.appendChild(userMessageDiv);
+		      const responseMessageDiv = document.createElement('div');
+		      responseMessageDiv.textContent ='用户：这是用户的回复';
+		      chatContainer.appendChild(responseMessageDiv);
+		      userInput.value = '';
+		    }
+		  });
+		</script>
+	</body>
+</html>

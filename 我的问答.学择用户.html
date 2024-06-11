@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+	</head>
+	<body>
+		<input type="button" value="选择" onclick="domel('0010','小米');">
+		<font>0010</font>&nbsp;&nbsp;&nbsp;
+		<font>小米</font>
+		<br>
+		<hr>
+		<input type="button" value="选择" onclick="domel('0011','小王');">
+		<font>0011</font>&nbsp&nbsp&nbsp
+		<font>小王</font>
+		<br>
+		<hr>
+		<input type="button" value="选择" onclick="domel('0012','小含');">
+		<font>0012</font>&nbsp&nbsp&nbsp
+		<font>小含</font>
+		<br>
+		<hr>
+		<input type="button" value="选择" onclick="domel('0013','小李');">
+		<font>0013</font>&nbsp&nbsp&nbsp
+		<font>小李</font>
+		<br>
+		<hr>
+		<input type="button" value="选择" onclick="domel('0014','小哲');">
+		<font>0014</font>&nbsp&nbsp&nbsp
+		<font>小哲</font>
+		<br>
+		<hr>
+		<input type="button" value="选择" onclick="domel('0015','小红');">
+		<font>0015</font>&nbsp&nbsp&nbsp
+		<font>小红</font>
+		<script>
+			function domel(num1,num2){
+				var fuYueMian=window.opener;
+				var pl=fuYueMian.document.getElementById("id1");
+				pl.value=num1;
+				var p2=fuYueMian.document.getElementById("id2");
+				p2.value=num2;
+				window.close();
+			}
+		</script>
+	</body>
+</html>

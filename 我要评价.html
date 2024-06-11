@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>勤工俭学管理网页</title>
+<head>
+<style>
+	.star {
+	     display: inline-block;
+	     width: 30px;
+	     height: 30px;
+	     background-color: gray;
+	     cursor: pointer;
+	   }
+	.star-filled {
+	     background-color: gold;
+	   }
+	   #starContainer{
+	   }
+
+	   .a p{
+		   font-size:12px;
+		   color: blue;
+	   } 
+	   .a form input{
+		   width: 240px;
+		   height: 100px;
+		   margin-top: 10px;
+	   }
+	   .aa{
+		   margin-top:5px;
+	   }
+</style>
+</head>
+
+<body>
+  <div id="starContainer">
+	<span>服务态度:</span>
+    <span class="star" onclick="toggleStar(1)"></span>
+    <span class="star" onclick="toggleStar(2)"></span>
+    <span class="star" onclick="toggleStar(3)"></span>
+    <span class="star" onclick="toggleStar(4)"></span>
+    <span class="star" onclick="toggleStar(5)"></span>
+	<br>
+	<span>完成质量:</span>
+	<span class="star" onclick="toggleStar(6)"></span>
+	<span class="star" onclick="toggleStar(7)"></span>
+	<span class="star" onclick="toggleStar(8)"></span>
+	<span class="star" onclick="toggleStar(9)"></span>
+	<span class="star" onclick="toggleStar(10)"></span>
+  </div>
+  <div class="a">
+	  <p>评价(请把您此次的感受写下来我们提别需要)</p>
+	  <form>
+		  <input type="text">
+	  </form>
+  <script>
+    function toggleStar(index) {
+      for (let i =1; i<=20; i++) {
+        if (i <= index) {
+          document.getElementsByClassName('star')[i - 1].classList.add('star-filled');
+        } else {
+          document.getElementsByClassName('star')[i - 1].classList.remove('star-filled');
+        }
+      }
+    }
+  </script>
+</body>
+</html>

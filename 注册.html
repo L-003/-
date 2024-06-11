@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#slideshow {
+				width: 100%;
+				height: 800px;
+				margin: 0 auto;
+			  /* 设置在页面水平居中 */
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#slideshow img {
+			  width: 100%;
+			  height: 800px;
+			  position: absolute;
+			  margin-top:0px;
+			  /* 图片采取绝对定位，均位于左上角，重叠在一起 */
+			  top: 0;
+			  left: 0;
+			  opacity: 0;
+			  /* 初始不透明度为0，图片都看不见 */
+			  transition: opacity 1s ease-in-out;
+			  /* --重点--定义一个关于透明度的 transition */
+			}
+			#slideshow img.active {
+			  opacity: 1;
+			  /* 有 active 类的图片不透明度为1，即显示图片 */
+			}
+			.q1 img{
+				width: 100%;
+				height: 800px;
+				position: absolute;
+				/* 图片采取绝对定位，均位于左上角，重叠在一起 */
+				top: 0;
+				left: 0;
+				opacity: 1;
+				transition: opacity 1s;
+			}
+			
+			.q1.fade-out{
+				opacity: 0;
+			}
+			/* 统一部份 */
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			/* ........ */
+			.a{
+				width: 370px;
+				height: 500px;
+				background-color: white;
+				float: left;
+				margin-top: -655px;
+				margin-left:560px;
+				border-radius: 20px;
+				position: absolute;
+			}
+			.a p{
+				text-align: center;
+				font-size: 28px;
+				margin-top: 25px;
+			}
+			.p1{
+				float: left;
+				font-size: 14px;
+				margin-top:7px;
+				margin-left:55px;
+			}
+			.pp input{
+				width: 60px;
+				height: 35px;
+				border: 2px solid darkgray;
+				margin-top: 30px;
+				margin-left:-43px;
+			} 
+			#phone{
+				float: right;
+				width: 200px;
+				height: 35px;
+				border: 2px solid darkgray;
+				margin-right: 40px;
+				margin-top: -38px;
+			}
+			.ppp{
+				margin-top: 20px;
+			}
+			.p3{
+				float: left;
+				font-size: 14px;
+				margin-top:7px;
+				margin-left:55px;
+			}
+			.p4 input{
+				width: 193px;
+				height: 35px;
+				border: 2px solid darkgray;
+				margin-left: -70px;
+				margin-top: 12px;
+			}
+			.p5{
+				width: 80px;
+				height: 38.7px;
+				border: 2px solid darkgray;
+				background-color: white;
+				color: #42d333;
+				font-size: 12px;
+				margin-left: -5px;
+				border-left: 0px;
+			}
+			.pppp{
+				margin-left:55px;
+			}
+			#password{
+				width: 275px;
+				height: 35px;
+				border: 2px solid darkgray;
+				float: left;
+				margin-left:55px;
+				margin-top: 10px;
+			}
+			.p7{
+				float: left;
+				margin-top: 15px;
+				margin-left: 55px;
+			}
+			.yue{
+				margin-top: 2px;
+				float: right;
+				font-size: 12px;
+				color: darkgray;
+				margin-left:5px;
+			}
+			.yue a{
+				color: #42d333;
+			}
+			.ppppp{
+				float: left;
+				width: 275px;
+				height: 35px;
+				background-color: #42d333;
+				margin-left: 55px;
+				margin-top: 15px;
+			}
+			.ppppp button{
+				color: white;
+				margin-left: 120px;
+				background-color: #42d333;
+				border: 0px;
+				margin-top:8px;
+				font-size: 14px;
+			}
+			.zui{
+				float:right;
+				margin-right: 35px;
+				margin-top: 30px;
+				font-size: 12px;
+			}
+			#phoneError{
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="dengru">
+					<div><a href="./登入.html"><b>登入</b></a></div>
+					<div><a href="注册.html"><b>注册</b></a></div>
+				</div>
+			</div>
+		</div>
+		<p class="q1"><img src="./img/登入背景图.png"></p>
+		<div id="slideshow">
+			<!-- 插入轮播的图片们 -->
+			<img src="./img/登入背景图.png">
+			<img src="./img/登入背景图2.png">
+			<img src="./img/登入背景图3.png">
+		</div>
+		<div class="bg"></div>
+			<div class="a">
+				<p><b>注册</b></p>
+				<form>
+					<label for="phone" class="p1">手机号</label>
+					<div class="pp">
+						<input type="text" value="+86🔻">
+					</div>
+					<span id="phoneError" style="color: red; font-size:12px;"></span>
+					<input type="text" id="phone" onkeyup="validatePhone()">
+					<div class="ppp">
+						<div class="p3">获取验证码</div><br>
+						<div class="p4">
+							<input type="text" id="yanzheng">
+							<button class="p5" onclick="getVerificationCode()">获取验证码</button>
+						</div><br>
+					</div>
+					<label for="password" class="pppp">输入密码</label>
+						<input type="password" id="password" onkeyup="validatePassword()">
+						<span id="passwordError" style="color: red; font-size: 12px;"></span>
+					<br>
+					<div class="p7">
+						<input type="checkbox">
+						<div class="yue">
+							已阅读并接受
+							<a href="./注册协议.html">(注册协议)</a>
+						</div>
+					</div><br>
+					<div class="ppppp">
+						<button onclick="generateUsername()">注册</button>
+					</div><br>
+					<div class="zui">
+						<a href="./登入.html">已有账号?去登入</a>
+					</div>
+				</form>
+			</div>
+			<!-- 手机号验证 -->
+			 <script>
+			    function validatePhone() {
+			      var phone = document.getElementById("phone").value;
+			      if (phone.length<11 || phone.length>11) {
+			        document.getElementById("phoneError").innerHTML = "格式不对";
+			      } else {
+			        document.getElementById("phoneError").innerHTML = "";
+			      }
+			    }
+			  </script>
+			  <!-- 获取验证码 -->
+			  <script>
+			      function getVerificationCode() {
+			        var randomCode = Math.floor(Math.random() * 1000000).toString();
+			        while (randomCode.length < 6) {
+			          randomCode = '0' + randomCode;
+			        }
+			        alert(randomCode);
+					alert("为您的安全考虑输入验证码后请再次输入手机号")
+			      }
+			    </script>
+			<!-- 验证密码 -->
+			 <script>
+			    function validatePassword() {
+			      var password = document.getElementById("password").value;
+			      // 在这里添加密码格式的验证逻辑
+			      if (password.length < 6) {
+			        document.getElementById("passwordError").innerHTML = "密码格式不对 长度至少6位";
+			      } else {
+			        document.getElementById("passwordError").innerHTML = "";
+			      }
+			    }
+			  </script>
+			  <!-- 获取用户名 -->
+			  <script>
+			      function generateUsername() {
+			        var username = generateRandomUsername(); 
+					//设置手机号和密码不能为空
+					const phone = document.getElementById('phone').value;
+					const password = document.getElementById('password').value;
+					if (phone.trim() === '' || password.trim() === '') {
+					  alert('手机号和密码不能为空');
+					  return;
+					}
+					window.location.href="登入.html"; //设置网页跳转
+			        alert("您的用户名为: " + username);
+					alert(username+"请复制您的用户名");
+			      }
+			      function generateRandomUsername() {
+			        var characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+					var username = '';
+					for (var i = 0; i < 8; i++) {
+					    username += characters.charAt(Math.floor(Math.random() * characters.length));
+					  }
+					  return username;
+					}
+			    </script>
+			<script>
+			    //---------主角：轮播图函数-------------
+			    function slideshow() {
+			      var slideshow=document.getElementById("slideshow"),
+			        imgs=slideshow.getElementsByTagName("img"),
+			        // 得到图片们
+			        current = 0;
+			      function slideOff() {
+			        imgs[current].className = "";
+			        // 图片淡出
+			      }
+			      function slideOn() {
+			        imgs[current].className = "active";
+			        // 图片淡入
+			      }
+			      function changeSlide() {
+			        // 切换图片的函数
+			        slideOff();
+			        current++;
+			        // 自增1
+			        if (current >= imgs.length) current = 0;
+			        slideOn();
+			      }
+			      // 每2s调用 changeSlide 函数进行图片轮播
+			      var slideon = setInterval(changeSlide, 3000);
+			    }
+			    slideshow();
+			</script>
+	</body>
+</html>

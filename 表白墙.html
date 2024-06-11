@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			/* 底部css样式 */
+			.moduan{
+				width: 100%;
+				height: 300px;
+				background-color: darkgray;
+				margin-top: 400px;
+			}
+			.mo1{
+				width: 550px;
+				height: 300px;
+				margin-left: 200px;
+			}
+			.mo1 img{
+				width: 300px;
+				height: 60px;
+				margin-top: 50px;
+			}
+			.mo1 p{
+				font-size: 18px;
+				color: white;
+			}
+			.footer-er{
+				width: 460px;
+				height: 220px;
+				background-color: white;
+				float: right;
+				margin-top: -260px;
+				margin-right: 200px;
+			}
+			.footer-er {
+				width: 390px;
+				height: 190px;
+				background: #fff;
+				margin-top: -260px;
+				padding: 20px 30px;
+			}
+			
+			.footer-er>div {
+				float: left;
+			}
+			
+			.footer-er h3 {
+				color: #404040;
+			}
+			
+			.footer-er>div:first-child>ul>li {
+				margin-top: 15px;
+				margin-left: 25px;
+			}
+			
+			.footer-er>div:first-child>ul>li>a>i {
+				font-size: 25px;
+				color: #CBCBCB;
+			}
+			.footer-er>div:first-child>ul>li>a>i:hover{
+				color: #42D333;
+			}
+			.footer-er>div:nth-child(2) {
+				margin-left: 70px;
+			}
+			
+			.footer-er>div:nth-child(2)>img {
+				width: 120px;
+			}
+			
+			.footer-er>div:last-child {
+				margin-top: 65px;
+				margin-left: 20px;
+			}
+			
+			.footer-er>div:last-child>div {
+				width: 100px;
+				height: 30px;
+				border: 2px solid #42D333;
+				margin-bottom: 10px;
+			}
+			
+			.footer-er>div:last-child>div>a {
+				display: block;
+				height: 100%;
+				font-size: 12px;
+				color: #42D333;
+				line-height: 30px;
+				text-align: center;
+			}
+			
+			.footer-er>div:last-child i {
+				font-size: 16px;
+				margin-right: 3px;
+			}
+			.a{
+				margin-left: 450px;
+				margin-top:15px;
+			}
+			.a a{
+				margin-left: 10px;
+			}
+			.a1{
+				color: red;
+				font-size: 14px;
+			}
+			.a2{
+				color: darkblue;
+				font-size: 14px;
+			}
+			.a3{
+				color: darkgray;
+				font-size: 14px;
+			}
+			.a4{
+				color:palevioletred;
+				font-size: 14px;
+			}
+			/* 主体部分 */
+			body {
+			    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			    background-color: #f8f9fa;
+			  }
+			  #header {
+			    background-color: #e9ecef;
+			    padding: 20px;
+			    display: flex;
+			    align-items: center;
+				margin-top: 30px;
+			  }
+			
+			  #header h2 {
+			    margin: 0;
+			  }
+			
+			  #header img {
+			    width: 50px;
+			    height: 50px;
+			    margin-left: 10px;
+			  }
+			
+			  #confessionForm {
+			    padding: 20px;
+			    background-color: rgba(255, 255, 255, 0.8);
+			    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			  }
+			
+			  #confessionForm label {
+			    display: block;
+			    font-size: 18px;
+			    margin-bottom: 5px;
+			  }
+			
+			  #confessionForm input,
+			  #confessionForm textarea {
+			    width: 100%;
+			    padding: 10px;
+			    margin-bottom: 10px;
+			    border: 2px solid #dee2e6;
+			  }
+			
+			  #confessions {
+			    padding: 20px;
+			  }
+			
+			.confession-item {
+			    border: 1px solid #dee2e6;
+			    padding: 15px;
+			    margin-bottom: 15px;
+			    background-color: rgba(255, 255, 255, 0.9);
+			    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			  }
+			
+			.confession-item img {
+			    width: 30px;
+			    height: 30px;
+			    float: left;
+			    margin-right: 10px;
+			  }
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="header">
+				<div class="container">
+					<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+					<ul class="titlelist">
+						<li><a href="首页.html">主页</a></li>
+						<li><a href="社区.html">社区</a></li>
+						<li><a href="./咨询.html">咨询</a></li>
+						<li><a href="./任务大厅.html">任务大厅</a></li>
+					</ul>
+					<div class="dengru">
+						<div><a href="./登入.html"><b>登入</b></a></div>
+						<div><a href="./注册.html"><b>注册</b></a></div>
+					</div>
+				</div>
+			</div>
+				<div class="banner">
+					<div><img src="./img/图片1.jpg"></div>
+					<div><img src="./img/图片2.jpg"></div>
+					<div><img src="./img/图片3.jpg"></div>
+					<div><img src="./img/图片4.jpg"></div>
+				</div>
+				<ul class="lrbutton">
+					<li>&lt;</li>
+					<li>&gt;</li>
+				</ul>
+				<ul class="smallbutton">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</div>
+		<div class="a">
+			<a href="社区.html" class="a1">热门话题</a>
+			<a href="./订单讨论.html" class="a2">订单讨论</a>
+			<a href="./话题动态.html" class="a3">话题动态</a>
+			<a href="./表白墙.html" class="a4">表白墙</a>
+		</div>
+		<!-- 主体部分 -->
+		<div id="header">
+		  <h2>表白墙</h2>
+			<img src="./img/头像4.png" alt="爱心图标">
+		</div>
+		
+		<div id="confessionForm">
+		  <form>
+		    <label for="name">你的名字：</label>
+		    <input type="text" id="name">
+		    <label for="message">表白内容：</label>
+		    <textarea id="message"></textarea>
+		    <input type="submit" value="提交">
+		  </form>
+		</div>
+		<div id="confessions">
+		  <div class="confession-item">
+				<img src="./img/头像2.png" alt="用户1头像">
+		    <p><strong>小明：</strong>找对象 身高185嘎嘎板正认真的加 朋友圈有照片</p >
+		  </div>
+		  <div class="confession-item">
+				<img src="./img/头像6.png" alt="用户2头像">
+		    <p><strong>小美：</strong>想问一下有没有出电子秤的</p >
+		  </div>
+		</div>
+		
+		<!-- 底部代码 -->
+		<div class="moduan">
+			<div class="mo1">
+				<img src="./img/logo.png">
+				<p><b>兼职钱是给想挣钱的学生一个平台,<br>汇总了本地区的各种兼职工作祝愿您能够找到适合自己的</b></p>
+			</div>
+			<div class="footer-er">
+				<div>
+					<h3>关注我们</h3>
+						<ul>
+							<li><a href="./联系我们二维码.html"><img src="./img/微信图标.png"></a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>微加我聊</h3>
+						<img src="./img/二维码.jpg">
+					</div>
+					<div>
+						<div><a href="#"><i class="iconfont icon-pingguo"></i><span>iPhoen下载</span></a></div>
+						<div><a href="#"><i class="iconfont icon-android-fill"></i><span>Android下载</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./js.js"></script>
+		<script>
+		  const form = document.getElementById('confessionForm').querySelector('form');
+		  const confessionsDiv = document.getElementById('confessions');
+		  form.addEventListener('submit', function (e) {
+		    e.preventDefault();
+		    const name = document.getElementById('name').value;
+		    const message = document.getElementById('message').value;
+		    const confessionItem = document.createElement('div');
+		    confessionItem.classList.add('confession-item');
+		    confessionItem.innerHTML = ` <p><strong>${name}:</strong> ${message}</p >`;
+		    confessionsDiv.appendChild(confessionItem);
+		    form.reset();
+		  });
+		</script>
+	</body>
+</html>

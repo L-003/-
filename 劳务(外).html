@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			body{
+				background-color: #e7e9eb;
+			}
+			li{
+				list-style-type: none;
+			}
+			/* 主体部分 */
+			.a{
+				position: absolute;
+				width:1200px;
+				height:120px;
+				margin-top: 30px;
+				margin-left:150px;
+			}
+			.a h1{
+				psition: absolute;
+				margin-top:-5px;
+				margin-left: 520px;
+				
+			}
+			.a a{
+				margin-top:170px;
+				margin-left: 100px;
+				color:#84888b;
+			}
+			.a a:hover{
+				color: #7dbebd;
+			}
+			.a hr{
+				margin-top:20px;
+			}
+			.b{
+				width: 1500px;
+				height:1200px;
+				position: absolute;
+				margin-top:150px;
+				margin-left:120px;
+			}
+			.b ul li{
+				width:400px;
+				height: 200px;
+				background-color: white;
+				margin-left: 20px;
+				margin-top: 20px;
+				float: left;
+				border-radius:10px;
+			}
+			.b ul li:hover{
+				box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.2);
+			}
+			.aa h3{
+				margin-left: 20px;
+			}
+			.ab{
+				width: 20px;
+				height: 20px;
+				background-image: url('img/屏幕截图 2024-05-29 213936.png');
+				background-size: cover;
+				position: absolute;
+				margin-left:230px;
+				margin-top: -40px;
+			}
+			.ab:hover{
+				background-image: url('./img/屏幕截图 2024-05-29 215354.png');
+			}
+			.aa span{
+				float: right;
+				margin-top: -42px;
+				font-size:18px;
+				color: red;
+				margin-right:20px;
+			}
+			.aaa p{
+				margin-top: 20px;
+				float: left;
+				margin-left:15px;
+				width:80px;
+				height:25px;
+				background-color: #f8f8f8;
+				text-align: center;
+				border-radius: 5px;
+				color: #84888b;
+			}
+			.aaaa img{
+				width:70px;
+				height:20px;
+				margin-top: 50px;
+				margin-left: 10px;
+			}
+			.aaaa p{
+				float: right;
+				font-size: 12px;
+				color: #84888b;
+				margin-top: 52px;
+				margin-right: 10px;
+			}
+			.abb img{
+				width:50px;
+				height:25px;
+				margin-top:-42px;
+				position: absolute;
+				margin-left:170px;
+			}
+			.c{
+				position: absolute;
+				width:200px;
+				height: 60px;
+				background-color: #d9eef1;
+				text-align: center;
+				margin-top:700px;
+				margin-left:550px;
+				border-radius: 5px;
+			}
+			.c:hover{
+				background-color: #00bebd;
+			}
+			.c p{
+				color:green;
+				margin-top:18px;
+			}
+			.c p:hover{
+				color: white;
+			}
+			.shi h2{
+				position: absolute;
+				margin-top:800px;
+				margin-left:600px;
+			}
+			.d{
+				margin-top:850px;
+				margin-left:0px;
+				width: 1500px;
+				height:1000px;
+			}
+			.d ul li{
+				height:500px;
+				width:415px;
+			}
+			.d ul li img{
+				width:50px;
+				height:50px;
+				margin-top: 15px;
+				margin-left: 15px;
+				border-radius: 5px;
+			}
+			.d ul li h4{
+				color: black;
+				position: absolute;
+				margin-top:-58px;
+				margin-left:80px;
+			}
+			.d ul li span{
+				color: #84888b;
+				font-size: 13px;
+				position: absolute;
+				margin-top:45px;
+				margin-left:15px;
+			}
+			.dd  a{
+				color: black;
+				position: absolute;
+				margin-left: 10px;
+				margin-top: 20px;
+				font-size:18px;
+			}
+			.dd1{
+				width: 20px;
+				height: 20px;
+				background-image: url('img/屏幕截图 2024-05-29 213936.png');
+				background-size: cover;
+				position: absolute;
+				margin-left:90px;
+				margin-top:23px;
+			}
+			.dd1:hover{
+				background-image: url('./img/屏幕截图 2024-05-29 215354.png');
+			}
+			.dd p{
+				color: red;
+				font-size: 18px;
+				float: right;
+				margin-top:20px;
+				margin-right: 30px;
+			}
+			.dd div p{
+				float: left;
+				margin-top:70px;
+				color: #84888b;
+				margin-left: 30px;
+				font-size: 14px;
+			}
+			
+			.dd11{
+				margin-top:150px;
+			}
+			.dd11  a{
+				color: black;
+				position: absolute;
+				margin-left: 10px;
+				margin-top: 20px;
+				font-size:18px;
+			}
+			.dd1{
+				width: 20px;
+				height: 20px;
+				background-image: url('img/屏幕截图 2024-05-29 213936.png');
+				background-size: cover;
+				position: absolute;
+				margin-left:90px;
+				margin-top:23px;
+			}
+			.dd1:hover{
+				background-image: url('./img/屏幕截图 2024-05-29 215354.png');
+			}
+			.dd11 p{
+				color: red;
+				font-size: 18px;
+				float: right;
+				margin-top:20px;
+				margin-right: 30px;
+			}
+			.dd11 div p{
+				float: left;
+				margin-top:70px;
+				color: #84888b;
+				margin-left: 30px;
+				font-size: 14px;
+			}
+			
+			.dd2{
+				margin-top:300px;
+			}
+			.dd2  a{
+				color: black;
+				position: absolute;
+				margin-left: 10px;
+				margin-top: 20px;
+				font-size:18px;
+			}
+			.dd1{
+				width: 20px;
+				height: 20px;
+				background-image: url('img/屏幕截图 2024-05-29 213936.png');
+				background-size: cover;
+				position: absolute;
+				margin-left:180px;
+				margin-top:23px;
+			}
+			.dd1:hover{
+				background-image: url('./img/屏幕截图 2024-05-29 215354.png');
+			}
+			.dd2 p{
+				color: red;
+				font-size: 18px;
+				float: right;
+				margin-top:20px;
+				margin-right: 30px;
+			}
+			.dd2 div p{
+				float: left;
+				margin-top:70px;
+				color: #84888b;
+				margin-left: 30px;
+				font-size: 14px;
+			}
+			.cc{
+				position: absolute;
+				width:200px;
+				height: 60px;
+				background-color: #d9eef1;
+				text-align: center;
+				margin-top:600px;
+				margin-left:550px;
+				border-radius: 5px;
+			}
+			.cc:hover{
+				background-color: #00bebd;
+			}
+			.cc p{
+				color:green;
+				margin-top:18px;
+			}
+			.cc p:hover{
+				color: white;
+			}
+			/* 底部css */
+			.moduan{
+				width: 100%;
+				height: 300px;
+				background-color: darkgray;
+				margin-top:2700px;
+			}
+			.mo1{
+				width: 550px;
+				height: 300px;
+				margin-left: 200px;
+			}
+			.mo1 img{
+				width: 300px;
+				height: 60px;
+				margin-top: 50px;
+			}
+			.mo1 p{
+				font-size: 18px;
+				color: white;
+			}
+			.footer-er{
+				width: 460px;
+				height: 220px;
+				background-color: white;
+				float: right;
+				margin-top: -260px;
+				margin-right: 200px;
+			}
+			.footer-er {
+				width: 390px;
+				height: 190px;
+				background: #fff;
+				margin-top: -260px;
+				padding: 20px 30px;
+			}
+			.footer-er>div {
+				float: left;
+			}
+			.footer-er h3 {
+				color: #404040;
+			}
+			.footer-er>div:first-child>ul>li {
+				margin-top: 15px;
+				margin-left: 25px;
+			}
+			.footer-er>div:first-child>ul>li>a>i {
+				font-size: 25px;
+				color: #CBCBCB;
+			}
+			.footer-er>div:first-child>ul>li>a>i:hover{
+				color: #42D333;
+			}
+			.footer-er>div:nth-child(2) {
+				margin-left: 70px;
+			}
+			
+			.footer-er>div:nth-child(2)>img {
+				width: 120px;
+			}
+			
+			.footer-er>div:last-child {
+				margin-top: 65px;
+				margin-left: 20px;
+			}
+			
+			.footer-er>div:last-child>div {
+				width: 100px;
+				height: 30px;
+				border: 2px solid #42D333;
+				margin-bottom: 10px;
+			}
+			
+			.footer-er>div:last-child>div>a {
+				display: block;
+				height: 100%;
+				font-size: 12px;
+				color: #42D333;
+				line-height: 30px;
+				text-align: center;
+			}
+			.footer-er>div:last-child i {
+				font-size: 16px;
+				margin-right: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="header">
+				<div class="container">
+					<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+					<ul class="titlelist">
+						<li><a href="首页.html">主页</a></li>
+						<li><a href="./社区.html">社区</a></li>
+						<li><a href="./咨询.html">咨询</a></li>
+						<li><a href="任务大厅.html">任务大厅</a></li>
+					</ul>
+					<div class="dengru">
+						<div><a href="./登入.html"><b>登入</b></a></div>
+						<div><a href="./注册.html"><b>注册</b></a></div>
+					</div>
+				</div>
+			</div>
+				<div class="banner">
+					<div><img src="./img/图片1.jpg"></div>
+					<div><img src="./img/图片2.jpg"></div>
+					<div><img src="./img/图片3.jpg"></div>
+					<div><img src="./img/图片4.jpg"></div>
+				</div>
+				<ul class="lrbutton">
+					<li>&lt;</li>
+					<li>&gt;</li>
+				</ul>
+				<ul class="smallbutton">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</div>
+		<div class="a">
+			<h1>热门兼职</h1>
+			<a href="任务大厅.html">Ps</a>
+			<a href="./HTML.html">HTML</a>
+			<a href="./劳务(外).html">劳务(外)</a>
+			<a href="./视频后期剪辑.html">视频后期剪辑</a>
+			<a href="./其他.html">其他</a>
+			<hr>
+		</div>
+		<div class="b">
+			<ul>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>莱山区招聘临时保安</h3>
+							<div class="ab">
+								  
+							</div>
+							<span>110元</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>自备黑鞋</p>
+								<p>不限学历</p>
+								<p>日结</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;日结</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>食品厂日结工</h3>
+							<div class="ab">
+								  
+							</div>
+							<div class="abb">
+								<img src="./img/屏幕截图 2024-05-29 213925.png">
+							</div>
+							<span>16元/时</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>周六周日</p>
+								<p>不限学历</p>
+								<p>次日结算</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;次日结算</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>本周五周六极兔快递</h3>
+							<div class="ab">
+								  
+							</div>
+							<div class="abb">
+								<img src="./img/屏幕截图 2024-05-29 213925.png">
+							</div>
+							<span>15元/时</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>周五周六</p>
+								<p>不限学历</p>
+								<p>日结</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;日结</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>开发区希尔顿酒店</h3>
+							<div class="ab">
+								  
+							</div>
+							<div class="abb">
+								<img src="./img/屏幕截图 2024-05-29 213925.png">
+							</div>
+							<span>14元/时</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>自卑黑裤鞋</p>
+								<p>不限学历</p>
+								<p>日结</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;日结</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>八角临时工 </h3>
+							<div class="ab">
+								  
+							</div>
+							<span>187元/天</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>冲压/焊接</p>
+								<p>不限学历</p>
+								<p>人走帐清</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;人走帐清</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>需要活动辅助人员</h3>
+							<div class="ab">
+								  
+							</div>
+							<span>100元/天</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>管水管饭</p>
+								<p>不限学历</p>
+								<p>日结</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;日单</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>张格庄樱桃市场</h3>
+							<div class="ab">
+								  
+							</div>
+							<span>16元/时</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>三个女生</p>
+								<p>不限学历</p>
+								<p>日结</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;日结</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>日结大龄工快递分拣</h3>
+							<div class="ab">
+								  
+							</div>
+							<span>175元/天</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>男18-55岁</p>
+								<p>不限学历</p>
+								<p>按日结单</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;按日结单</p>
+							</div>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aa">
+							<h3>德邦日结！</h3>
+							<div class="ab">
+								  
+							</div>
+							<span>170元/单</span>
+							<div class="aaa">
+								<p>线下</p>
+								<p>只要男18-55岁</p>
+								<p>不限学历</p>
+								<p>下班结账</p>
+							</div>
+							<div class="aaaa">
+								<img src="./img/logo彩色.png">
+								<p>线下&nbsp;|&nbsp;下班结账</p>
+							</div>
+						</div>
+					</li>
+				</a>
+			</ul>
+			<div class="c">
+				<p>查看更多</p>
+			</div>
+			<div class="shi">
+				<h2>实习岗位</h2>
+			</div>
+			<div class="d">
+				<ul>
+					<a href="#">
+						<li>
+							<img src="./img/a.webp">
+							<h4>锦晟达源</h4>
+							<span>未融资&nbsp;|&nbsp;20-99人&nbsp;|&nbsp;日化</span>
+							<div class="dd">
+								<a href="#">人事专员</a>
+								<div class="dd1">
+								</div>
+								<p>3-4K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">包住+省内出差</a>
+								<div class="dd1">
+								</div>
+								<p>5-10K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">山东省内外出差专员</a>
+								<div class="dd1">
+								</div>
+								<p>10-12K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/m.png">
+							<h4>烟台中集来福士海</h4>
+							<span>不需要融资&nbsp;|&nbsp;1000-9999人&nbsp;|&nbsp;铁路/船舶/航空/航天制造</span>
+							<div class="dd">
+								<a href="#">项目计划主管</a>
+								<div class="dd1">
+								</div>
+								<p>9-14K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">生产助理(实习)</a>
+								<div class="dd1">
+								</div>
+								<p>5-7K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">项目预算员</a>
+								<div class="dd1">
+								</div>
+								<p>8-13K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mm.jpg">
+							<h4>瑞坤企业服务咨询</h4>
+							<span>不需要融资&nbsp;|&nbsp;100-499人&nbsp;|&nbsp;咨询</span>
+							<div class="dd">
+								<a href="#">五险,底薪客服员</a>
+								<div class="dd1">
+								</div>
+								<p>7-12K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">人事主管(双休)</a>
+								<div class="dd1">
+								</div>
+								<p>8-10K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">办公室文员</a>
+								<div class="dd1">
+								</div>
+								<p>8-13K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmm.png">
+							<h4>泰盈科技集团</h4>
+							<span>C轮&nbsp;|&nbsp;10000人以上&nbsp;|&nbsp;电子商务</span>
+							<div class="dd">
+								<a href="#">视频审核/实习</a>
+								<div class="dd1">
+								</div>
+								<p>4-5K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">招两个宝跟我混</a>
+								<div class="dd1">
+								</div>
+								<p>7000+</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">缺俩徒弟 亲自带</a>
+								<div class="dd1">
+								</div>
+								<p>200-250</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmmm.jpg">
+							<h4>蓝白</h4>
+							<span>不需要融资&nbsp;|&nbsp;1000-9999人&nbsp;|&nbsp;餐饮</span>
+							<div class="dd">
+								<a href="#">中餐厅餐厅经理</a>
+								<div class="dd1">
+								</div>
+								<p>8-12K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">蓝白招聘店员</a>
+								<div class="dd1">
+								</div>
+								<p>4-5K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">储备干部</a>
+								<div class="dd1">
+								</div>
+								<p>4-5K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmmmm.png">
+							<h4>明远家坊</h4>
+							<span>未融资&nbsp;|&nbsp;500-999人&nbsp;|&nbsp;其他行业</span>
+							<div class="dd">
+								<a href="#">招聘裁剪工</a>
+								<div class="dd1">
+								</div>
+								<p>4-8K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">跨境电商生产跟单员</a>
+								<div class="dd1">
+								</div>
+								<p>5-6K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">跨境电商运营专员</a>
+								<div class="dd1">
+								</div>
+								<p>5-9K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmmmmm.jpg">
+							<h4>烟台德霖</h4>
+							<span>500-999人&nbsp;|&nbsp;日化</span>
+							<div class="dd">
+								<a href="#">产品专员/助理</a>
+								<div class="dd1">
+								</div>
+								<p>4-8K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">00后氛围好+住宿</a>
+								<div class="dd1">
+								</div>
+								<p>4-8K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">助理4K包上手</a>
+								<div class="dd1">
+								</div>
+								<p>4-6K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>学历不限</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmmmmmm.png">
+							<h4>顺丰速运</h4>
+							<span>已上市&nbsp;|&nbsp;10000人以上&nbsp;|&nbsp;快递</span>
+							<div class="dd">
+								<a href="#">招配/理/捡/发货</a>
+								<div class="dd1">
+								</div>
+								<p>120-240</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>中专/中技</p></div>
+							</div>
+							<div class="dd11">
+								<a href="#">招聘防损员</a>
+								<div class="dd1">
+								</div>
+								<p>5-6K</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>大专</p></div>
+							</div>
+							<div class="dd2">
+								<a href="#">招聘搬运工/装卸工</a>
+								<div class="dd1">
+								</div>
+								<p>25/时</p>
+								<div><p>烟台</p></div>
+								<div><p>经验不限</p></div>
+								<div><p>中专/中技</p></div>
+							</div>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<img src="./img/mmmmmmmm.jpg">
+								<h4>绿城物业</h4>
+								<span>已上市&nbsp;|&nbsp;10000人以上&nbsp;|&nbsp;物业管理</span>
+								<div class="dd">
+									<a href="#">监控员</a>
+									<div class="dd1">
+									</div>
+									<p>4-5K</p>
+									<div><p>烟台</p></div>
+									<div><p>经验不限</p></div>
+									<div><p>学历不限</p></div>
+								</div>
+								<div class="dd11">
+									<a href="#">物业专员</a>
+									<div class="dd1">
+									</div>
+									<p>4-5K</p>
+									<div><p>烟台</p></div>
+									<div><p>经验不限</p></div>
+									<div><p>高中</p></div>
+								</div>
+								<div class="dd2">
+									<a href="#">物业客服主管</a>
+									<div class="dd1">
+									</div>
+									<p>4-6K</p>
+									<div><p>烟台</p></div>
+									<div><p>经验不限</p></div>
+									<div><p>本科</p></div>
+								</div>
+							</li>
+						</li>
+				</ul>
+			</div>
+			<div class="cc">
+				<p>查看更多</p>
+			</div>
+		</div>
+		<div class="moduan">
+			<div class="mo1">
+				<img src="./img/logo.png">
+				<p><b>兼职钱是给想挣钱的学生一个平台,<br>汇总了本地区的各种兼职工作祝愿您能够找到适合自己的</b></p>
+			</div>
+			<div class="footer-er">
+				<div>
+					<h3>关注我们</h3>
+						<ul>
+							<li><a href="./联系我们二维码.html"><img src="./img/微信图标.png"></a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>微加我聊</h3>
+						<img src="./img/二维码.jpg">
+					</div>
+					<div>
+						<div><a href="#"><i class="iconfont icon-pingguo"></i><span>iPhoen下载</span></a></div>
+						<div><a href="#"><i class="iconfont icon-android-fill"></i><span>Android下载</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./js.js"></script>
+	</body>
+</html>

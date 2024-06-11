@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			body{
+				background-color:#f0f3ef;
+			}
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.yonghu1{
+				float: right;
+				margin-top: 20px;
+			}
+			.yonghu1 a{
+				margin-left:10px;
+				margin-top: -20px;
+				color: white;
+			}
+			.tuichu a{
+				float: right;
+				margin-right:-200px;
+				margin-top:25px;
+				font-size: 12px;
+			}
+			/* 侧导航栏头 */
+			.ce{
+				width: 160px;
+				height:800px;
+				background-color:black;
+				opacity:0.3;
+				margin-left:200px;
+				margin-top:70px;
+				position: relative;
+				position:fixed;
+				display: flex;
+			}
+			.ding h4{
+				position: absolute;
+				color:white;
+				margin-top: 80px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.wo{
+				position:absolute;
+				margin-top:120px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ping{
+				position: absolute;
+				margin-top:145px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.qian h4{
+				position: absolute;
+				color:white;
+				margin-top:200px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.yu{
+				position: absolute;
+				margin-top:240px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.hong{
+				position: absolute;
+				margin-top:265px;
+				margin-left:260px;
+				font-size:14px;
+				color:white;
+			}
+			.yue{
+				position: absolute;
+				margin-top:287px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ke h4{
+				position: absolute;
+				color:white;
+				margin-top:340px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.jia{
+				position: absolute;
+				margin-top:375px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.yi{
+				position: absolute;
+				margin-top:400px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jiao{
+				position: absolute;
+				margin-top:425px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.wen{
+				position: absolute;
+				margin-top:450px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.fa{
+				position: absolute;
+				margin-top:475px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jubao{
+				position: absolute;
+				margin-top:500px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.she h4{
+				position: absolute;
+				color:white;
+				margin-top:545px;
+				margin-left:255px;
+				font-size: 18px;
+			}
+			.ge{
+				position: absolute;
+				margin-top:585px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.lian{
+				position: absolute;
+				margin-top:610px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			a:hover{
+				color: mediumblue;
+			}
+			/* 侧导航栏尾 */
+			.qw{
+				background-color:white;
+				width:1000px;
+				height:450px;
+				position: absolute;
+				margin-left:400px;
+				margin-top:220px;
+			}
+			.zuiw p{
+				position: absolute;
+				margin-left:380px;
+				color: darkgrey;
+				font-size:20px;
+				margin-top:90px;
+			}
+			.ad{
+				position: absolute;
+				width: 1000px;
+				height:70px;
+				background-color: white;
+				margin-left:400px;
+				margin-top:90px;
+			}
+			.ad p{
+				margin-left:30px;
+				margin-top: 20px;
+				font-size: 14px;
+			}
+			.add{
+				position: absolute;
+				margin-left:780px;
+				margin-top:360px;
+			}
+			.add button{
+				border: 0px;
+			}
+			.addd{
+				position: absolute;
+				margin-left:880px;
+				margin-top:360px;
+			}
+			.addd button{
+				background-color: red;
+				border: 0px;
+				color: white;
+			}
+			.fuwu{
+				position: absolute;
+				width:300px;
+				height:500px;
+				background-color:red;
+				margin-left: 400px;
+				margin-top:200px;
+			}
+			.shenqing p{
+				margin-top: 35px;
+				margin-left:70px;
+				color: white;
+				font-size: 24px;
+			}
+			.fuwu a{
+				position: absolute;
+				color:white;
+				margin-top:50px;
+				margin-left:113px;
+			}
+			.fuwu a:hover{
+				color:white;
+				opacity: 0.5;
+			}
+			.fuwua a{
+				position: absolute;
+				margin-left:514px;
+				margin-top:380px;
+				color: white;
+			}
+			.fuwua a:hover{
+				color: white;
+				opacity: 0.5;
+			}
+			.az{
+				position: absolute;
+				width:660px;
+				height: 500px;
+				background-color: white;
+				margin-left:743px;
+				margin-top: 200px;
+			}
+			.az p{
+				margin-left: 30px;
+				margin-top: 20px;
+				font-size:13px;
+				color: darkgray;
+			}
+			.h hr{
+				margin-top:200px;
+			}
+			.zuih a{
+				position: absolute;
+				margin-top:200px;
+				color: black;
+				font-size:14px;
+				margin-left:450px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="yonghu">
+					<div class="yonghu1">🤑<a href="./用户中心.html"><b>用户中心</b></a></div>
+					<div class="tuichu">
+						<a href="./首页.html"><u>退出登录</u></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 侧导航栏 -->
+		<div class="ce"></div>
+		<div class="ding">
+			<h4>订单中心</h4>
+			<div><a href="我的订单.html" class="wo">我的订单</a></div>
+			<div><a href="./评价晒单.html" class="ping">评价晒单</a></div>
+		</div>
+		<div class="qian">
+			<h4>我的钱包</h4>
+			<div><a href="./我的余额.html" class="yu">我的余额</a></div>
+			<div><a href="./红包.html" class="hong">红包</a></div>
+			<div><a href="./当月排行.html" class="yue">当月排行</a></div>
+		</div>
+		<div class="ke">
+			<h4>客户服务</h4>
+			<div><a href="./价格保护.html" class="jia">价格保护</a></div>
+			<div><a href="./意见建议.html" class="yi">意见建议</a></div>
+			<div><a href="./我的问答.html" class="jiao">交易纠纷</a></div>
+			<div><a href="./我的问答.html" class="wen">我的问答</a></div>
+			<div><a href="./我的发票.html" class="fa">我的发票</a></div>
+			<div><a href="./举报中心.html" class="jubao">举报中心</a></div>
+		</div>
+		<div class="she">
+			<h4>设置</h4>
+			<div><a href="./个人信息.html" class="ge">个人信息</a></div>
+			<div><a href="./联系我们.html" class="lian">联系我们</a></div>
+		</div>
+		<!-- 侧导航栏尾 -->
+		<!-- 我的订单 -->
+		<div class="ad">
+			<p>我的订单</p>
+		</div>
+		<div class="fuwu">
+			<div class="shenqing"><p><b>服务申请/售后</b></p></div>
+			<a href="售后服务.html">申请售后</a>
+		</div>
+		<div class="fuwua">
+			<a href="./订单问题.html">订单问题</a>
+		</div>
+		<div class="az">
+			<p>您还没有申请售后!</p>
+			<div class="h">
+				<hr>
+			</div>
+			<div class="zuih">
+				<a href="./全部订单.html">查看所有订单&nbsp;></a>
+			</div>
+		</div>
+	</body>
+</html>

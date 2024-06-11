@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			.a{
+				margin-left: 450px;
+				margin-top:15px;
+			}
+			.a a{
+				margin-left: 10px;
+			}
+			.a1{
+				color: red;
+				font-size: 14px;
+			}
+			.a2{
+				color: darkblue;
+				font-size: 14px;
+			}
+			.a3{
+				color: darkgray;
+				font-size: 14px;
+			}
+			.a4{
+				color:palevioletred;
+				font-size: 14px;
+			}
+			.b{
+				margin-top:20px;
+				margin-left:220px;
+				width:1100px;
+				height:2250px;
+				background-color:#f4f4f4;
+				position: absolute;
+				opacity:;
+			}
+			.b1{
+				position: absolute;
+				width:600px;
+				height:500px;
+				background-color:white;
+				margin-left:160px;
+				margin-top:20px;
+				opacity: 1;
+			}
+			.b1 img{
+				width:70px;
+				height:70px;
+				margin-left: -90px;
+				margin-top:15px;
+			}
+			.b1 p{
+				margin-left: -85px;
+			}
+			.bbb img{
+				width:65px;
+				height: 20px;
+				margin-left:-85px;
+				margin-top:10px;
+			}
+			.bb1 p{
+				position: absolute;
+				margin-left:20px;
+				margin-top:-110px;
+			}
+			.bb1 span{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -80px;
+				font-size: 20px;
+			}
+			.bb1 nav{
+				color:#6b6b6b;
+				position: absolute;
+				margin-left: 20px;
+				margin-top:-50px;
+			}
+			.bb1 img{
+				position: absolute;
+				margin-left:20px;
+				margin-top:40px;
+				width:400px;
+				height:250px;
+			}
+			
+			.b2{
+				position: absolute;
+				width:600px;
+				height:500px;
+				background-color:white;
+				margin-left:160px;
+				margin-top:600px;
+				opacity: 1;
+			}
+			.b2 img{
+				width:70px;
+				height:70px;
+				margin-left: -90px;
+				margin-top:15px;
+			}
+			.b2 p{
+				margin-left: -85px;
+				margin-top: ;
+			}
+			.bbb2 img{
+				width:65px;
+				height: 20px;
+				margin-left:-85px;
+				margin-top:10px;
+			}
+			.bb2 p{
+				position: absolute;
+				margin-left:20px;
+				margin-top:-110px;
+			}
+			.bb2 span{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -80px;
+				font-size: 20px;
+			}
+			.bb2 nav{
+				color:#6b6b6b;
+				position: absolute;
+				margin-left: 20px;
+				margin-top:-50px;
+			}
+			.bb2 img{
+				position: absolute;
+				margin-left:20px;
+				margin-top:45px;
+				width:400px;
+				height:250px;
+			}
+			
+			.b4{
+				position: absolute;
+				width:600px;
+				height:500px;
+				background-color:white;
+				margin-left:160px;
+				margin-top:1150px;
+				opacity: 1;
+			}
+			.b4 img{
+				width:70px;
+				height:70px;
+				margin-left: -90px;
+				margin-top:15px;
+			}
+			.b4 p{
+				margin-left: -85px;
+			}
+			.bbb4 img{
+				width:65px;
+				height: 20px;
+				margin-left:-85px;
+				margin-top:10px;
+			}
+			.bb4 p{
+				position: absolute;
+				margin-left:20px;
+				margin-top:-110px;
+			}
+			.bb4 span{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -80px;
+				font-size: 20px;
+			}
+			.bb4 nav{
+				color:#6b6b6b;
+				position: absolute;
+				margin-left: 20px;
+				margin-top:-50px;
+			}
+			.bb4 img{
+				position: absolute;
+				margin-left:20px;
+				margin-top:35px;
+				width:300px;
+				height:250px;
+			}
+			.b3{
+				position: absolute;
+				width:600px;
+				height:500px;
+				background-color:white;
+				margin-left:160px;
+				margin-top:1700px;
+				opacity: 1;
+			}
+			.b3 img{
+				width:70px;
+				height:70px;
+				margin-left: -90px;
+				margin-top:15px;
+			}
+			.b3 p{
+				margin-left: -85px;
+			}
+			.bbb3 img{
+				width:65px;
+				height: 20px;
+				margin-left:-85px;
+				margin-top:10px;
+			}
+			.bb3 p{
+				position: absolute;
+				margin-left:20px;
+				margin-top:-110px;
+			}
+			.bb3 span{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -80px;
+				font-size: 20px;
+			}
+			.bb3 nav{
+				color:#6b6b6b;
+				position: absolute;
+				margin-left: 20px;
+				margin-top:-50px;
+			}
+			.bb3 img{
+				position: absolute;
+				margin-left:20px;
+				margin-top:45px;
+				width:300px;
+				height:250px;
+			}
+			.sd{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.sd p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.sd1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.sd1 img{
+				width:20px;
+				height: 20px;
+			}
+			.sq1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:5px;
+				margin-left:100px;
+			}
+			.sq p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.sa{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.sa p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.sa1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.sa1 img{
+				width:20px;
+				height: 20px;
+			}
+			.ss1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:5px;
+				margin-left:100px;
+			}
+			.ss p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.sx{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.sx p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.sx1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.sx1 img{
+				width:20px;
+				height: 20px;
+			}
+			.sx1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:40px;
+				margin-left:20px;
+			}
+			.sx p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.sx{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.sx p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.sx1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.sx1 img{
+				width:20px;
+				height: 20px;
+			}
+			.sw1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:5px;
+				margin-left:100px;
+			}
+			.sw p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.se{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.se p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.se1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.se1 img{
+				width:20px;
+				height: 20px;
+			}
+			.se1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:40px;
+				margin-left:20px;
+			}
+			.se p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.se{
+				width: 600px;
+				height:50px;
+				background-color:#f8f8f8;
+				position: absolute;
+				margin-top:310px;
+			}
+			.se p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:14px;
+				color: darkgray;
+			}
+			.se1{
+				position: absolute;
+				margin-top: -35px;
+			}
+			.se1 img{
+				width:20px;
+				height: 20px;
+			}
+			.sr1 img{
+				width:30px;
+				height: 20px;
+				position: absolute;
+				margin-top:5px;
+				margin-left:100px;
+			}
+			.sr p{
+				position: absolute;
+				margin-top:30px;
+				font-size: 12px;
+				margin-left:100px;
+				color:darkgray;
+			}
+			.c{
+				width: 280px;
+				height:220px;
+				position: absolute;
+				background-color:white;
+				margin-left:800px;
+				margin-top: 50px;
+			}
+			.c img{
+				width: 280px;
+				height:55px;
+			}
+			.cc img{
+				width:40px;
+				height:30px;
+				margin-top: 30px;
+				margin-left:15px;
+			}
+			.cc input{
+				background-color: #f8f8f8;
+				border:1px;
+				width:180px;
+				height:30px;
+				margin-top:30px;
+				position: absolute;
+				margin-left:5px;
+			}
+			.ccc input{
+				position: absolute;
+				margin-left:180px;
+				margin-top:20px;
+				border: 0px;
+				background-color: #bababa;
+				width:50px;
+				height:25px;
+				color: white;
+			}
+			.wenlist{
+				width:300px;
+				position: absolute;
+				margin-left: 800px;
+				margin-top:300px;
+			}
+			.wenlist .title{
+				background:#F4F4F4;
+			}
+			.wenlist {
+				width: calc(25% - 30px);
+				height: 650px;
+				padding: 30px 15px;
+				border: 2px solid #E7E7E7;
+				position: relative;
+			}
+			
+			.wenlist>.title {
+				position: absolute;
+				width: 60%;
+				background: #fff;
+				left: 20%;
+				top: -2%;
+				text-align: center;
+				color: #E7E7E7;
+			}
+			
+			.wenlist>.title>a {
+				color: #E7E7E7;
+				font-weight: bold;
+			}
+			
+			.wenlist>.title>a:first-of-type {
+				color: rgb(96, 96, 96);
+			}
+			
+			.wenlist>.title>span {
+				margin: 0 10px;
+			}
+			.wenlist .list-first {
+				height: 140px;
+				position: relative;
+			}
+			.wenlist .list-first>a{
+				overflow:hidden;
+			}
+			.wenlist .list-first>a,
+			.wenlist .list-first>a>img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.wenlist .list-first>a>img{
+				transition: all .4s;
+			}
+			.wenlist .list-first>a:hover>img{
+				transform: scale(1.2);
+			}
+			.wenlist .biao {
+				position: absolute;
+				left: 4%;
+				top: -6%;
+				display: block;
+				width: 17px;
+				height: 17px;
+				border-radius: 100%;
+				background-color: #FF9961;
+				color: #fff;
+				text-align: center;
+				line-height: 17px;
+			}
+			.wenlist .list-first .kuang {
+				position: absolute;
+				top: 20%;
+				left: 15%;
+				width: 70%;
+				height: 60%;
+				border: 2px solid rgba(255, 255, 255, .8);
+				color: rgba(255, 255, 255, .8);
+			}
+			.wenlist .list-first .kuang>span {
+				display: block;
+				text-align: center;
+				margin-top: 17%;
+				font-weight: bold;
+			}
+			.wenlist .list-li {
+				height: 70px;
+				position: relative;
+				margin-top: 31.5px;
+			}
+			.wenlist .list-li .biao {
+				top: -10%;
+				left: 4%;
+			}
+			.wenlist .list-li>a>div:first-child{
+				overflow:hidden;
+			}
+			.wenlist .list-li>a,
+			.wenlist .list-li>a>div:first-child>img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.wenlist .list-li>a img{
+				transition: all .4s;
+			}
+			.wenlist .list-li>a:hover img{
+				transform: scale(1.2);
+			}
+			.wenlist .list-li>a:hover h4{
+				color:#FF9961 !important;
+			}
+			.wenlist .list-li>a>div:first-child {
+				float: left;
+				width: 42%;
+			}
+			
+			.wenlist .list-li>a>div:last-child {
+				float: right;
+				width: 56%;
+			}
+			
+			.wenlist .list-li>a>div:last-child>h4 {
+				margin: 5px 0;
+				font-size: 14px;
+				width: 100%;
+				color: rgb(96, 96, 96);
+			}
+			
+			.wenlist .list-li>a>div:last-child>p {
+				font-size: 14px;
+				width: 70%;
+				color: #999999;
+			}
+			/* 底部css */
+			.moduan{
+				width: 100%;
+				height: 300px;
+				background-color: darkgray;
+				margin-top:2350px;
+			}
+			.mo1{
+				width: 550px;
+				height: 300px;
+				margin-left: 200px;
+			}
+			.mo1 img{
+				width: 300px;
+				height: 60px;
+				margin-top: 50px;
+			}
+			.mo1 p{
+				font-size: 18px;
+				color: white;
+			}
+			.footer-er{
+				width: 460px;
+				height: 220px;
+				background-color:darkgray;
+				float: right;
+				margin-top:50px;
+				margin-right: 200px;
+			}
+			.footer-er {
+				width: 390px;
+				height: 190px;
+				background: #fff;
+				margin-top:-250px;
+				padding: 20px 30px;
+			}			
+			.footer-er>div {
+				float: left;
+			}
+			
+			.footer-er h3 {
+				color: #404040;
+			}
+			
+			.footer-er>div:first-child>ul>li {
+				margin-top: 15px;
+				margin-left: 25px;
+			}
+			
+			.footer-er>div:first-child>ul>li>a>i {
+				font-size: 25px;
+				color: #CBCBCB;
+			}
+			.footer-er>div:first-child>ul>li>a>i:hover{
+				color: #42D333;
+			}
+			.footer-er>div:nth-child(2) {
+				margin-left: 70px;
+			}
+			.footer-er>div:nth-child(2)>img {
+				width: 120px;
+			}
+			.footer-er>div:last-child {
+				margin-top: 65px;
+				margin-left: 20px;
+			}
+			.footer-er>div:last-child>div {
+				width: 100px;
+				height: 30px;
+				border: 2px solid #42D333;
+				margin-bottom: 10px;
+			}
+			.footer-er>div:last-child>div>a {
+				display: block;
+				height: 100%;
+				font-size: 12px;
+				color: #42D333;
+				line-height: 30px;
+				text-align: center;
+			}
+			.footer-er>div:last-child i {
+				font-size: 16px;
+				margin-right: 3px;
+			}
+			.yonghu1{
+				float: right;
+				margin-top: 20px;
+			}
+			.yonghu1 a{
+				margin-left:10px;
+				margin-top: -20px;
+				color: white;
+			}
+			.tuichu a{
+				float: right;
+				margin-right:-200px;
+				margin-top:25px;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="header">
+				<div class="container">
+					<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+					<ul class="titlelist">
+						<li><a href="./登入后的首页.html">主页</a></li>
+						<li><a href="./登入后的社区.html">社区</a></li>
+						<li><a href="./登入后的咨询.html">咨询</a></li>
+						<li><a href="./登入后的任务大厅.html">任务大厅</a></li>
+					</ul>
+					<div class="yonghu">
+						<div class="yonghu1">🤑<a href="./用户中心.html"><b>用户中心</b></a></div>
+						<div class="tuichu">
+							<a href="./首页.html"><u>退出登录</u></a>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="banner">
+					<div><img src="./img/图片1.jpg"></div>
+					<div><img src="./img/图片2.jpg"></div>
+					<div><img src="./img/图片3.jpg"></div>
+					<div><img src="./img/图片4.jpg"></div>
+				</div>
+				<ul class="lrbutton">
+					<li>&lt;</li>
+					<li>&gt;</li>
+				</ul>
+				<ul class="smallbutton">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</div>
+		<div class="a">
+			<a href="社区.html" class="a1">热门话题</a>
+			<a href="./订单讨论.html" class="a2">订单讨论</a>
+			<a href="./话题动态.html" class="a3">话题动态</a>
+			<a href="./表白墙.html" class="a4">表白墙</a>
+		</div>
+		<div class="b">
+			<div class="b1">
+				<img src="./img/头像1.png">
+				<p>保护涂鸦</p>
+				<div class="bbb">
+					<img src="./img/屏幕截图 2024-05-20 191655.png">
+				</div>
+				<div class="bb1">
+					<div class="sd">
+						<div class="sd1">
+							<img src="./img/屏幕截图 2024-05-20 192141.png">
+						</div>
+						<p>3542</p>
+						<div class="sq">
+							<div class="sq1">
+								<img src="./img/屏幕截图 2024-05-20 192148.png">
+							</div>
+							<p>3542</p>
+						</div>
+					</div>
+					<p>2024-5-19</p>
+					<span><b>我永远朝着自由彼岸行驶风雨无阻</b></span>
+					<nav>小王子里有句台词，想要和别人制造羁绊，就要承受掉眼泪的风险，虽然说恋爱跟交朋友都是喜忧参半，但还是祝所有人都能够遇到一个频率相同，步调一致，且知你冷暖，懂你悲欢的人。</nav>
+					<img src="./img/10.png">
+				</div>
+			</div>
+			<div class="b2">
+				<img src="./img/头像2.png">
+				<p>偏吃兔兔</p>
+				<div class="bbb2">
+					<img src="./img/屏幕截图 2024-05-20 191655.png">
+				</div>
+				<div class="bb2">
+					<div class="sa">
+						<div class="sa1">
+							<img src="./img/屏幕截图 2024-05-20 192141.png">
+						</div>
+						<p>5628</p>
+						<div class="ss">
+							<div class="ss1">
+								<img src="./img/屏幕截图 2024-05-20 192148.png">
+							</div>
+							<p>1314</p>
+						</div>
+					</div>
+					<p>2024-5-24</p>
+					<span><b>一个人走很快 但两个人走好像很有趣</b></span>
+					<nav>我喜欢音乐 喜欢记录 喜欢拍照以后想满世界转 去自己想去的地方做自己想做的事现在的人们都说你应该做什么你不应该做什么可是我认为 我所热爱的就是真理我喜欢各种地方的风景 喜欢花 喜欢高山 喜欢河流 我觉得我应该是自由的 是自由的风。</nav>
+					<img src="./img/33.png">
+				</div>
+			</div>
+			<div class="b4">
+				<img src="./img/头像4.png">
+				<p>烟工表白墙</p>
+				<div class="bbb4">
+					<img src="./img/屏幕截图 2024-05-20 191655.png">
+				</div>
+				<div class="bb4">
+					<div class="sx">
+						<div class="sx1">
+							<img src="./img/屏幕截图 2024-05-20 192141.png">
+						</div>
+						<p>6578</p>
+						<div class="sw">
+							<div class="sw1">
+								<img src="./img/屏幕截图 2024-05-20 192148.png">
+							</div>
+							<p>13256</p>
+						</div>
+					</div>
+					<p>2023-11-12</p>
+					<span><b>下雪后的烟工</b></span>
+					<nav>下雪后的烟工，宛如一个梦幻的世界。雪花纷纷扬扬地飘落，给校园披上洁白的盛装,犹如一个城堡。小径上铺满积雪，情侣们携手漫步，脚印串串，那画面无比浪漫。树梢上挂着雪花，在风中摇曳，似在轻吟着浪漫的诗篇，让人陶醉其中。</nav>
+					<img src="./img/ee45c33c4c641a8f8da3e9095d1402d.jpg">
+				</div>
+			</div>
+			<div class="b3">
+				<img src="./img/头像3.png">
+				<p>偏吃兔兔</p>
+				<div class="bbb3">
+					<img src="./img/屏幕截图 2024-05-20 191655.png">
+				</div>
+				<div class="bb3">
+					<div class="se">
+						<div class="se1">
+							<img src="./img/屏幕截图 2024-05-20 192141.png">
+						</div>
+						<p>1258</p>
+						<div class="sr">
+							<div class="sr1">
+								<img src="./img/屏幕截图 2024-05-20 192148.png">
+							</div>
+							<p>5565</p>
+						</div>
+					</div>
+					<p>2024-5-24</p>
+					<span><b>短句推广</b></span>
+					<nav>快来加入短剧推广兼职啦！轻松简单，收益可观。只需动动手指，在各大平台分享精彩短剧，吸引更多人观看。无论你是学生还是上班族，都能利用闲暇时间赚外快。快来一起助力短剧传播，开启有趣又能赚钱的兼职之旅吧！</nav>
+					<img src="./img/bilibiliimg.jpg">
+				</div>
+			</div>
+			<div class="c">
+				<a href="#"><img src="./img/屏幕截图 2024-05-20 191715.png"></a>
+				<div class="cc">
+					<img src="./img/屏幕截图 2024-05-20 193617.png">
+					<input type="text">
+				</div>
+				<div class="ccc">
+					<input type="submit" value="发送">
+				</div>
+		</div>
+		<div class="wenlist">
+				<div class="title"><a href="#">热门</a><span>|</span><a href="#">最新</a></div>
+				<ul>
+					<li class="list-first"><a href="#">
+						<img src="./img/1.jpg">
+						<span class="biao">1</span>
+						<div class="kuang"><span>热门总结评选</span></div>
+					</a></li>
+					<li  class="list-li"><a href="#">
+						<div><img src="./img/10.png" >
+						<span class="biao">2</span></div>
+						<div>
+							<h4>年度十大热门总结评选</h4>
+							<p>年度十大热门总结评选</p>
+						</div>
+					</a></li>
+					<li class="list-li"><a href="#">
+						<div><img src="./img/33.png" >
+						<span class="biao">2</span></div>
+						<div>
+							<h4>年度十大热门总结评选</h4>
+							<p>年度十大热门总结评选</p>
+						</div>
+					</a></li>
+					<li class="list-li"><a href="#">
+						<div><img src="./img/ee45c33c4c641a8f8da3e9095d1402d.jpg" >
+						<span class="biao">3</span></div>
+						<div>
+							<h4>年度十大热门总结评选</h4>
+							<p>年度十大热门总结评选</p>
+						</div>
+					</a></li>
+					<li class="list-li"><a href="#">
+						<div><img src="./img/11.jpeg" ></div>
+						<div>
+							<h4>年度十大热门总结评选</h4>
+							<p>年度十大热门总结评选</p>
+						</div>
+					</a></li>
+					<li class="list-li"><a href="#">
+						<div><img src="./img/bilibiliimg.jpg" ></div>
+						<div>
+							<h4>年度十大热门总结评选</h4>
+							<p>年度十大热门总结评选</p>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="moduan">
+			<div class="mo1">
+				<img src="./img/logo.png">
+				<p><b>兼职钱是给想挣钱的学生一个平台,<br>汇总了本地区的各种兼职工作祝愿您能够找到适合自己的</b></p>
+			</div>
+			<div class="footer-er">
+				<div>
+					<h3>关注我们</h3>
+						<ul>
+							<li><a href="./联系我们二维码.html"><img src="./img/微信图标.png"></a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>微加我聊</h3>
+						<img src="./img/二维码.jpg">
+					</div>
+					<div>
+						<div><a href="#"><i class="iconfont icon-pingguo"></i><span>iPhoen下载</span></a></div>
+						<div><a href="#"><i class="iconfont icon-android-fill"></i><span>Android下载</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="./js.js"></script>
+	</body>
+</html>

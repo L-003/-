@@ -1,0 +1,108 @@
+/* 定义头部 */
+.head {
+	height: 470px;
+	position: relative;
+}
+/* 头部容器设置宽度和索引 */
+.head>.header {
+	width: 100%;
+	z-index: 999;
+}
+
+.head>.header>.container {
+	width: 80% !important;
+}
+/* 图片和内容设置高度和过渡效果 */
+.head .banner {
+	height: 100%;
+}
+
+.head .banner>div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 1.5s;
+}
+/* 设置透明度 */
+.hide {
+	opacity: 0 !important;
+}
+/* 设置透明度 */
+.show {
+	opacity: 1 !important;
+}
+
+.head .banner>div>img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.head .banner>div:first-of-type {
+	opacity: 1;
+}
+
+.lrbutton>li {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	z-index: 100;
+	font-weight: 200;
+	top: 46.3%;
+}
+
+.lrbutton>li:first-of-type {
+	left: 1%;
+}
+
+.lrbutton>li:last-of-type {
+	right: 1%;
+}
+
+.smallbutton {
+	position: absolute;
+	overflow: hidden;
+	height: 10px;
+	bottom: 4%;
+	left: 46.7%;
+	z-index: 100;
+}
+
+.smallbutton,
+.lrbutton {
+	cursor: pointer;
+}
+
+.smallbutton>li {
+	width: 10px;
+	height: 100%;
+	float: left;
+	margin-right: 15px;
+	border-radius: 100%;
+	background: rgb(180, 182, 179);
+}
+
+.smallbutton>li:first-child {
+	width: 30px;
+	border-radius: 10px;
+	background: rgb(150, 208, 156);
+}
+/* 定义按钮在不同状态下的样式 */
+.btnstyleshow {
+	width: 30px !important;
+	border-radius: 10px !important;
+	background: rgb(150, 208, 156) !important;
+}
+
+.btnstylehide {
+	width: 10px !important;
+	border-radius: 100% !important;
+	background: rgb(180, 182, 179) !important;
+}

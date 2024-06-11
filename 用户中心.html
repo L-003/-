@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			body{
+				background-color:#f0f3ef;
+			}
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.yonghu1{
+				float: right;
+				margin-top: 20px;
+			}
+			.yonghu1 a{
+				margin-left:10px;
+				margin-top: -20px;
+				color: white;
+			}
+			.tuichu a{
+				float: right;
+				margin-right:-200px;
+				margin-top:25px;
+				font-size: 12px;
+			}
+			/* 侧导航栏头 */
+			.ce{
+				width: 160px;
+				height:800px;
+				background-color:black;
+				opacity:0.3;
+				margin-left:200px;
+				margin-top:70px;
+				position: relative;
+				position:fixed;
+				display: flex;
+			}
+			.ding h4{
+				position: absolute;
+				color:white;
+				margin-top: 80px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.wo{
+				position:absolute;
+				margin-top:120px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ping{
+				position: absolute;
+				margin-top:145px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.qian h4{
+				position: absolute;
+				color:white;
+				margin-top:200px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.yu{
+				position: absolute;
+				margin-top:240px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.hong{
+				position: absolute;
+				margin-top:265px;
+				margin-left:260px;
+				font-size:14px;
+				color:white;
+			}
+			.yue{
+				position: absolute;
+				margin-top:287px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ke h4{
+				position: absolute;
+				color:white;
+				margin-top:340px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.jia{
+				position: absolute;
+				margin-top:375px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.yi{
+				position: absolute;
+				margin-top:400px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jiao{
+				position: absolute;
+				margin-top:425px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.wen{
+				position: absolute;
+				margin-top:450px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.fa{
+				position: absolute;
+				margin-top:475px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jubao{
+				position: absolute;
+				margin-top:500px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.she h4{
+				position: absolute;
+				color:white;
+				margin-top:545px;
+				margin-left:255px;
+				font-size: 18px;
+			}
+			.ge{
+				position: absolute;
+				margin-top:585px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.lian{
+				position: absolute;
+				margin-top:610px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			a:hover{
+				color: mediumblue;
+			}
+			/* 侧导航栏尾 */
+			/* 主体部分头 */
+			.zhuti{
+				position: absolute;
+				width:1000px;
+				height:220px;
+				margin-top:110px;
+				margin-left:400px;
+				background-color: white;
+			}
+			.aa img{
+				width:240px;
+				height:240px;
+				position: absolute;
+				margin-top:-20px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}
+			.a p{
+				margin-left:270px;
+				margin-top: 20px;
+			}
+			.a img{
+				width:20px;
+				height:20px;
+				position:absolute;
+				margin-left:950px;
+				margin-top:-30px;
+			}
+			hr{
+				border-color:gray;
+			}
+			.b a{
+				color:black;
+				margin-left:270px;
+				margin-top:10px;
+				font-size:20px;
+				position: absolute;
+			}
+			.b a:hover{
+				color: red;
+			}
+			.b p{
+				margin-left: 272px;
+				font-size:12px;
+				margin-top:40px;
+				position: absolute;
+			}
+			.c a{
+				position: absolute;
+				margin-left: 370px;
+				margin-top:6.5px;
+				font-size: 20px;
+				color: black;
+			}
+			.c a:hover{
+				color: red;
+			}
+			.c p{
+				margin-left: 360px;
+				position: absolute;
+				margin-top:40px;
+				font-size: 12px;
+			}
+			.d a{
+				color: black;
+				position: absolute;
+				margin-left:480px;
+				margin-top:7.5px;
+				font-size: 20px;
+			}
+			.d a:hover{
+				color: red;
+			}
+			.d p{
+				position: absolute;
+				font-size: 12px;
+				margin-left:480px;
+				margin-top: 40px;
+			}
+			.q a{
+				color: black;
+				position: absolute;
+				margin-left:630px;
+				font-size: 20px;
+				margin-top: 6.7px;
+			}
+			.q a:hover{
+				color: red;
+			}
+			.q p{
+				position: absolute;
+				font-size: 12px;
+				margin-left: 620px;
+				margin-top:40px;
+			}
+			.aaa a{
+				position: absolute;
+				font-size:16px;
+				color: #4193ee;
+				margin-left:380px;
+				margin-top:100px;
+			}
+			.aaa a:hover{
+				color: red;
+			}
+			.bb a{
+				position: absolute;
+				font-size: 16px;
+				color: #4193ee;
+				margin-left:580px;
+				margin-top: 100px;
+			}
+			.bb a:hover{
+				color: red;
+			}
+			.qw{
+				background-color:white;
+				width:700px;
+				height:400px;
+				position: absolute;
+				margin-left:400px;
+				margin-top:360px;
+			}
+			.qq p{
+				position: absolute;
+				color: black;
+				margin-top:20px;
+				margin-left:30px;
+			}
+			.h hr{
+				margin-top:50px;
+			}
+			.as{
+				width: 100px;
+				height: 100px;
+				background-color:white;
+				margin-left:60px;
+				margin-top: 30px;
+			}
+			.as:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				transition: 0.5s;
+				
+			}
+			.as a img{
+				width:50px;
+				height:40px;
+				position: absolute;
+				margin-left:25px;
+				margin-top: 20px;
+				
+			}
+			.as p{
+				position: absolute;
+				margin-left:30px;
+				margin-top:70px;
+				color: black;
+				font-size:12px;
+			}
+			.aq{
+				width: 100px;
+				height: 100px;
+				background-color:white;
+				margin-left:180px;
+				margin-top:-100px;
+			}
+			.aq:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				transition: 0.5s;
+				
+			}
+			.aq a img{
+				width:50px;
+				height:40px;
+				position: absolute;
+				margin-left:25px;
+				margin-top: 20px;
+				
+			}
+			.aq p{
+				position: absolute;
+				margin-left:35px;
+				margin-top:70px;
+				font-size:12px;
+			}
+			.aw{
+				width: 100px;
+				height: 100px;
+				background-color:white;
+				margin-left:300px;
+				margin-top:-100px;
+			}
+			.aw:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				transition: 0.5s;
+				
+			}
+			.aw a img{
+				width:50px;
+				height:40px;
+				position: absolute;
+				margin-left:25px;
+				margin-top: 20px;
+				
+			}
+			.aw p{
+				position: absolute;
+				margin-left:32px;
+				margin-top:70px;
+				font-size:12px;
+			}
+			.ae{
+				width: 100px;
+				height: 100px;
+				background-color:white;
+				margin-left:430px;
+				margin-top:-100px;
+			}
+			.ae:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				transition: 0.5s;
+				
+			}
+			.ae a img{
+				width:47px;
+				height:45px;
+				position: absolute;
+				margin-left:25px;
+				margin-top: 20px;
+				
+			}
+			.ae p{
+				position: absolute;
+				margin-left:25px;
+				margin-top:70px;
+				font-size:12px;
+			}
+			.ar{
+				width: 100px;
+				height: 100px;
+				background-color:white;
+				margin-left:540px;
+				margin-top:-100px;
+			}
+			.ar:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				transition: 0.5s;
+				
+			}
+			.ar a img{
+				width:60px;
+				height:50px;
+				position: absolute;
+				margin-left:25px;
+				margin-top: 20px;
+				
+			}
+			.ar p{
+				position: absolute;
+				margin-left:35px;
+				margin-top:70px;
+				font-size:12px;
+			}
+			.zui{
+				width: 80px;
+				height: 80px;
+				position: absolute;
+				margin-left:150px;
+				margin-top:50px;
+			}
+			.zuiw p{
+				position: absolute;
+				margin-left:260px;
+				color: darkgrey;
+				font-size: 12px;
+				margin-top:90px;
+			}
+			.z{
+				position: absolute;
+				width:280px;
+				height:150px;
+				background-color:white;
+				margin-left:1120px;
+				margin-top:358px;
+			}
+			.za{
+				position: absolute;
+				margin-left:20px;
+				margin-top:15px;
+			}
+			.zaa hr{
+				margin-top:52px;
+			}
+			.zb a{
+				position: absolute;
+				margin-left: 50px;
+				margin-top:10px;
+			}
+			.za a:hover{
+				color: red;
+			}
+			.zb p{
+				position: absolute;
+				margin-top:40px;
+				font-size: 12px;
+				margin-left: 40px;
+			}
+			.zc a{
+				position: absolute;
+				margin-left:160px;
+				margin-top:10px;
+			}
+			.zc a:hover{
+				color: red;
+			}
+			.zc p{
+				position: absolute;
+				margin-top:40px;
+				font-size: 12px;
+				margin-left:150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="yonghu">
+					<div class="yonghu1">🤑<a href="./用户中心.html"><b>用户中心</b></a></div>
+					<div class="tuichu">
+						<a href="./首页.html"><u>退出登录</u></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 侧导航栏 -->
+		<div class="ce"></div>
+		<div class="ding">
+			<h4>订单中心</h4>
+			<div><a href="我的订单.html" class="wo">我的订单</a></div>
+			<div><a href="./评价晒单.html" class="ping">评价晒单</a></div>
+		</div>
+		<div class="qian">
+			<h4>我的钱包</h4>
+			<div><a href="./我的余额.html" class="yu">我的余额</a></div>
+			<div><a href="./红包.html" class="hong">红包</a></div>
+			<div><a href="./当月排行.html" class="yue">当月排行</a></div>
+		</div>
+		<div class="ke">
+			<h4>客户服务</h4>
+			<div><a href="./价格保护.html" class="jia">价格保护</a></div>
+			<div><a href="./意见建议.html" class="yi">意见建议</a></div>
+			<div><a href="./交易纠纷.html" class="jiao">交易纠纷</a></div>
+			<div><a href="./我的问答.html" class="wen">我的问答</a></div>
+			<div><a href="./我的发票.html" class="fa">我的发票</a></div>
+			<div><a href="./举报中心.html" class="jubao">举报中心</a></div>
+		</div>
+		<div class="she">
+			<h4>设置</h4>
+			<div><a href="./个人信息.html" class="ge">个人信息</a></div>
+			<div><a href="./联系我们.html" class="lian">联系我们</a></div>
+		</div>
+		<!-- 侧导航栏尾 -->
+		<!-- 主体部分 -->
+		<div class="zhuti">
+			<div class="aa">
+				<img src="./img/用户logo1.jpg">
+			</div>
+			<div class="a">
+				<p>我的钱包</p>
+				<img src="./img/钱袋图标.png">
+			</div>
+			<div>
+				<hr>
+			</div>
+			<div class="b">
+				<a href="#"><b>0.00</b></a>
+				<p>余额</p>
+			</div>
+			<div class="c">
+				<a href="#"><b>---</b></a>
+				<p>提现金额</p>
+			</div>
+			<div class="d">
+				<a href="#"><b>0.00</b></a>
+				<p>小金库昨日收益</p>
+			</div>
+			<div class="q">
+				<a href="#"><b>---</b></a>
+				<p>平台福利</p>
+			</div>
+			<div class="aaa">
+				<a href="./任务大厅.html">去接单</a>
+			</div>
+			<div class="bb">
+				<a href="#">提现</a>
+			</div>
+		</div>
+		<!-- 我的订单 -->
+		<div class="qw">
+			<div class="qq">
+				<p>我的订单</p>
+			</div>
+			<div class="h">
+				<hr>
+			</div>
+			<div class="as">
+				<a href="./待付款.html"><img src="./img/屏幕截图 2024-05-11 001725.png"></a>
+				<p>待付款</p>
+			</div>
+			<div class="aq">
+				<a href="./待交单.html"><img src="./img/屏幕截图 2024-05-11 001717.png"></a>
+				<p>待交单</p>
+			</div>
+			<div class="aw">
+				<a href="./待回复.html"><img src="./img/屏幕截图 2024-05-11 001711.png"></a>
+				<p>待回复</p>
+			</div>
+			<div class="ae">
+				<a href="./售后服务.html"><img src="./img/屏幕截图 2024-05-11 001705.png"></a>
+				<p>售后服务</p>
+			</div>
+			<div class="ar">
+				<a href="./全部订单.html"><img src="./img/屏幕截图 2024-05-11 001659.png"></a>
+				<p>全部订单</p>
+			</div>
+			<div class="zui">
+				<img src="./img/购物车.png">
+			</div>
+			<div class="zuiw">
+				<p>您的订单太少了,这里都是空空的,快去挑选适合的订单吧!</p>
+			</div>
+		</div>
+		<!-- 我的关注 -->
+		<div class="z">
+			<div class="za">我的关注</div>
+			<div class="zaa">
+				<hr>
+			</div>
+			<div class="zb">
+				<a href="#">0</a>
+				<p>点单关注</p>
+			</div>
+			<div class="zc">
+				<a href="#">1</a>
+				<p>用户关注</p>
+			</div>
+		</div>
+	</body>
+</html>

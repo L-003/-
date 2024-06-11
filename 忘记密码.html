@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>勤工俭学管理网页</title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#slideshow {
+				width: 100%;
+				height: 800px;
+				margin: 0 auto;
+			  /* 设置在页面水平居中 */
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#slideshow img {
+			  width: 100%;
+			  height: 800px;
+			  position: absolute;
+			  margin-top:0px;
+			  /* 图片采取绝对定位，均位于左上角，重叠在一起 */
+			  top: 0;
+			  left: 0;
+			  opacity: 0;
+			  /* 初始不透明度为0，图片都看不见 */
+			  transition: opacity 1s ease-in-out;
+			  /* --重点--定义一个关于透明度的 transition */
+			}
+			#slideshow img.active {
+			  opacity: 1;
+			  /* 有 active 类的图片不透明度为1，即显示图片 */
+			}
+			.q1 img{
+				width: 100%;
+				height: 800px;
+				position: absolute;
+				/* 图片采取绝对定位，均位于左上角，重叠在一起 */
+				top: 0;
+				left: 0;
+				opacity: 1;
+				transition: opacity 1s;
+			}
+			
+			.q1.fade-out{
+				opacity: 0;
+			}
+			/* 统一部份 */
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.dengru a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.logo a img{
+				width: 200px;
+			}
+			/* ........ */
+			.a{
+				width:350px;
+				height: 350px;
+				background-color:white;
+				float: left;
+				margin-top:-630px;
+				margin-left:600px;
+				opacity:0.9;
+				border-radius: 20px;
+			}
+			.aa label{
+				color:black;
+				margin-left:50px;
+			}
+			.aa input{
+				margin-top: 40px;
+				width: 180px;
+				height: 30px;
+				border: 2px solid darkgray;
+			}
+			.a1 label{
+				margin-left:75px;
+			}
+			.a1 input{
+				margin-left:6px;
+				margin-top: 30px;
+				width: 180px;
+				height: 30px;
+				border: 2px solid darkgray;
+			}
+			.aaa label{
+				margin-left:42px;
+			}
+			.aaa input{
+				margin-left:6px;
+				margin-top: 30px;
+				width: 180px;
+				height: 30px;
+				border: 2px solid darkgray;
+			}
+			.p4 label{
+				margin-left:60px;
+			}
+			.p4 input{
+				margin-left:6px;
+				margin-top:30px;
+				width: 120px;
+				height: 30px;
+				border: 2px solid darkgray;
+			}
+			.p4 button{
+
+			}
+			.a8{
+				margin-left:250px;
+				width:100px;
+				height:150px;
+				margin-top:-28px;
+			}
+			.que{
+				width: 180px;
+				height: 30px;
+				background-color: #42d333;
+				margin-top: -100px;
+				margin-left: 100px;
+			}
+			.que a{
+				color: white;
+				margin-left:70px;
+				margin-top: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="dengru">
+					<div><a href="./登入.html"><b>登入</b></a></div>
+					<div><a href="注册.html"><b>注册</b></a></div>
+				</div>
+			</div>
+		</div>
+		<p class="q1"><img src="./img/登入背景图.png"></p>
+		<div id="slideshow">
+			<!-- 插入轮播的图片们 -->
+			<img src="./img/登入背景图.png">
+			<img src="./img/登入背景图2.png">
+			<img src="./img/登入背景图3.png">
+		</div>
+		<div class="bg"></div>
+		<div class="a">
+			<div class="aa">
+				<label for=""><b>手机号码</b></label>
+				<input type="text"><br>
+			</div>
+			<div class="a1">
+				<label><b>密码</b></label>
+				<input type="text"  class="aa"><br>
+			</div>
+			<div class="aaa">
+				<label><b>确认密码</b></label>
+				<input type="text"><br>
+			</div>
+			<div class="p4">
+				<label><b>验证码</b></label>
+				<input type="text">
+				<div class="a8"><button onclick="getVerificationCode()">获取验证码</button></div>
+			</div><br>
+			<div class="que">
+				<a href="./登入.html">确认</a>
+			</div>
+		</div>
+		<!-- 获取验证码 -->
+		<script>
+		    function getVerificationCode() {
+		      var randomCode = Math.floor(Math.random() * 1000000).toString();
+		      while (randomCode.length < 6) {
+		        randomCode = '0' + randomCode;
+		      }
+		      alert(randomCode);
+		    }
+		  </script>
+		<script>
+		    //---------主角：轮播图函数-------------
+		    function slideshow() {
+		      var slideshow=document.getElementById("slideshow"),
+		        imgs=slideshow.getElementsByTagName("img"),
+		        // 得到图片们
+		        current = 0;
+		      function slideOff() {
+		        imgs[current].className = "";
+		        // 图片淡出
+		      }
+		      function slideOn() {
+		        imgs[current].className = "active";
+		        // 图片淡入
+		      }
+		      function changeSlide() {
+		        // 切换图片的函数
+		        slideOff();
+		        current++;
+		        // 自增1
+		        if (current >= imgs.length) current = 0;
+		        slideOn();
+		      }
+		      // 每2s调用 changeSlide 函数进行图片轮播
+		      var slideon = setInterval(changeSlide, 3000);
+		    }
+		    slideshow();
+		</script>
+	</body>
+</html>

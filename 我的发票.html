@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./public.css" />
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<style>
+			body{
+				background-color:#f0f3ef;
+			}
+			.titlelist li a:hover{
+				transform: translate(-1px, -1px)
+			}
+			.yonghu1{
+				float: right;
+				margin-top: 20px;
+			}
+			.yonghu1 a{
+				margin-left:10px;
+				margin-top: -20px;
+				color: white;
+			}
+			.tuichu a{
+				float: right;
+				margin-right:-200px;
+				margin-top:25px;
+				font-size: 12px;
+			}
+			/* 侧导航栏头 */
+			.ce{
+				width: 160px;
+				height:800px;
+				background-color:black;
+				opacity:0.3;
+				margin-left:200px;
+				margin-top:70px;
+				position: relative;
+				position:fixed;
+				display: flex;
+			}
+			.ding h4{
+				position: absolute;
+				color:white;
+				margin-top: 80px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.wo{
+				position:absolute;
+				margin-top:120px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ping{
+				position: absolute;
+				margin-top:145px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.qian h4{
+				position: absolute;
+				color:white;
+				margin-top:200px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.yu{
+				position: absolute;
+				margin-top:240px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.hong{
+				position: absolute;
+				margin-top:265px;
+				margin-left:260px;
+				font-size:14px;
+				color:white;
+			}
+			.yue{
+				position: absolute;
+				margin-top:287px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.ke h4{
+				position: absolute;
+				color:white;
+				margin-top:340px;
+				margin-left:243px;
+				font-size: 18px;
+			}
+			.jia{
+				position: absolute;
+				margin-top:375px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.yi{
+				position: absolute;
+				margin-top:400px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jiao{
+				position: absolute;
+				margin-top:425px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.wen{
+				position: absolute;
+				margin-top:450px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.fa{
+				position: absolute;
+				margin-top:475px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.jubao{
+				position: absolute;
+				margin-top:500px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.she h4{
+				position: absolute;
+				color:white;
+				margin-top:545px;
+				margin-left:255px;
+				font-size: 18px;
+			}
+			.ge{
+				position: absolute;
+				margin-top:585px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			.lian{
+				position: absolute;
+				margin-top:610px;
+				margin-left:250px;
+				font-size:14px;
+				color:white;
+			}
+			a:hover{
+				color: mediumblue;
+			}
+			/* 侧导航栏尾 */
+			/* 主体部分头 */
+			.zhuti{
+				position: absolute;
+				width:1000px;
+				height:60px;
+				margin-top:80px;
+				margin-left:400px;
+				background-color: white;
+			}
+			.zhuti p{
+				color:black;
+				opacity: 0.8;
+				margin-top:18px;
+				margin-left:35px;
+			}
+			.a{
+				width: 1000px;
+				height: 500px;
+				position: absolute;
+				margin-left: 400px;
+				margin-top: 170px;
+				background-color: white;
+			}
+			.aa{
+				background-color:#fffdee;
+				width: 400px;
+				font-size:14px;
+				margin-left: 30px;
+				margin-top: 30px;
+			}
+			.aa img{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+			}
+			.aa p{
+				color: #ff6600;
+			}
+			.b{
+				position: absolute;
+				width: 500px;
+				height: 500px;
+				margin-left: 500px;
+				background-color:white;
+				margin-top:-395px;
+			}
+			.b button{
+				border: 0px;
+				background-color: white;
+				margin-top: 30px;
+				margin-left: 50px;
+				color: red;
+			}
+			.c{
+				position: absolute;
+				margin-left:150px;
+				margin-top: 20px;
+			}
+			.c p{
+				margin-top: 20px;
+			}
+			.q{
+				width:60px;
+				color: red;
+				border: 2px red solid;
+			}
+			.aacv{
+				margin-left:-17px;
+			}
+			.ew{
+				margin-left: -33px;
+			}
+			.tijiao{
+				position: absolute;
+				margin-left:80px;
+				margin-top:25px;
+			}
+			.tijiao input{
+				border: 0px;
+				border-radius:2px;
+				background-color: red;
+				width: 50px;
+				height: 30px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo"><a href="首页.html"><img src="./img/logo.png" ></a></div>
+				<ul class="titlelist">
+					<li><a href="./首页.html">主页</a></li>
+					<li><a href="./社区.html">社区</a></li>
+					<li><a href="./咨询.html">咨询</a></li>
+					<li><a href="./任务大厅.html">任务大厅</a></li>
+				</ul>
+				<div class="yonghu">
+					<div class="yonghu1">🤑<a href="./用户中心.html"><b>用户中心</b></a></div>
+					<div class="tuichu">
+						<a href="./首页.html"><u>退出登录</u></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 侧导航栏 -->
+		<div class="ce"></div>
+		<div class="ding">
+			<h4>订单中心</h4>
+			<div><a href="我的订单.html" class="wo">我的订单</a></div>
+			<div><a href="./评价晒单.html" class="ping">评价晒单</a></div>
+		</div>
+		<div class="qian">
+			<h4>我的钱包</h4>
+			<div><a href="./我的余额.html" class="yu">我的余额</a></div>
+			<div><a href="./红包.html" class="hong">红包</a></div>
+			<div><a href="./当月排行.html" class="yue">当月排行</a></div>
+		</div>
+		<div class="ke">
+			<h4>客户服务</h4>
+			<div><a href="./价格保护.html" class="jia">价格保护</a></div>
+			<div><a href="./意见建议.html" class="yi">意见建议</a></div>
+			<div><a href="./交易纠纷.html" class="jiao">交易纠纷</a></div>
+			<div><a href="./我的问答.html" class="wen">我的问答</a></div>
+			<div><a href="./我的发票.html" class="fa">我的发票</a></div>
+			<div><a href="./举报中心.html" class="jubao">举报中心</a></div>
+		</div>
+		<div class="she">
+			<h4>设置</h4>
+			<div><a href="./个人信息.html" class="ge">个人信息</a></div>
+			<div><a href="./联系我们.html" class="lian">联系我们</a></div>
+		</div>
+		<!-- 侧导航栏尾 -->
+		<!-- 主体部分 -->
+		<div class="zhuti"><p>我的发票</p></div>
+		<div class="a">
+			<div class="aa">
+				<img src="./img/屏幕截图 2024-05-15 231950.png">
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温馨提示：
+					一、发票换开：
+					1、订单完成后一年内可支持换开发票一次。
+					2、专用发票（纸质）需将原票寄回，邮寄地址详见收票人信息页。
+					3、不支持“企业抬头”变更。
+					二、补开发票规则：
+					1、专用发票订单完成后1年内可补开发票，专用发票订单完成10天后，1年内可以补开发票。
+					三、企业发票：
+					1、专用发票资质维护入口：我的-账户设置-增票资质。
+					2、企业用户集中开票，请联系客户经理或前往电脑端“我的京东-账户设置-企业发票”进行自主开票。
+					3、如您有企业采购需求，享受组合开票、统一管理等发票服务。如您有其他疑问，可拨打企业采购热线900-028-0000联系我们。
+					四、暂不支持补开、换开发票类型：
+					1、第三方卖家订单、全球购订单暂不支持发票补开与换开。
+					五、数电票是全面数字化电子发票，数电票的法律效力、基本用途等与现有纸质发票相同。其中，带有“增值税专用发票”字样的数电票，其法律效力、基本用途与现有增值税专用发票相同；带有“普通发票”字样的数电票，其法律效力、基本用途与现有普通发票相同。
+					六、根据国家税务政策，部分公司提供数电票。
+					七、数电票无特定格式要求,增加了XML的数据电文格式便利交付,同时保留PDF格式，用户可根据公司需求自行选择版式进行下载。
+					八、数电发票具体内容介绍可详见数电票详细介绍。
+				</p>
+			</div>
+			<div class="b">
+				<button>发票申请</button>
+				<div class="c">
+					<form>
+						<p>发票类型&nbsp;&nbsp;&nbsp;<select>
+								<option>纸质普票(需自取)</option>
+								<option>电子普票</option>
+						</select></p>
+						<p>发票内容&nbsp;&nbsp;&nbsp;<input type="text" value="商品明细" class="q"></p>
+						<p>发票抬头&nbsp;&nbsp;&nbsp;<select>
+							<option>我们</option>
+							<option>单位</option>
+						</select></p>
+						<div class="aacv">
+							<p>收票人姓名&nbsp;&nbsp;&nbsp;<input type="text"></p>
+							<p>收票人地址&nbsp;&nbsp;&nbsp;<input type="text"></p>
+						</div>
+						<div class="ew">
+							<p>收票电话号码&nbsp;&nbsp;&nbsp;<input type="text"></p>
+						</div>
+						<div class="tijiao">
+							<input type="submit">
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
